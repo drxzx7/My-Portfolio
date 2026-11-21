@@ -511,9 +511,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Online HTTP / Server environment with robust fallbacks
     let responseData = null;
     const endpointsToTry = [
-      'api/vivian.php',
-      'api/vivian',
-      'http://localhost:3000/api/vivian'
+      '/api/vivian',
+      'api/vivian'
     ];
 
     for (const ep of endpointsToTry) {

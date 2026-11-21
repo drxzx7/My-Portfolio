@@ -1,11 +1,12 @@
 {
   "name": "ahmad-shuaib-portfolio",
   "version": "2.0.0",
+  "private": true,
   "description": "Ahmad Shuaib — High-Performance Full Stack & AI Engineer Portfolio",
-  "main": "server.js",
   "scripts": {
+    "dev": "node server.js",
     "start": "node server.js",
-    "dev": "node server.js"
+    "build": "echo 'Static assets ready for edge deployment'"
   },
   "keywords": [
     "portfolio",
@@ -19,4 +20,3 @@
   "author": "Ahmad Shuaib (drxzx7)",
   "license": "MIT"
 }
-

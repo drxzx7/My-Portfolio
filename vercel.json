@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "framework": null,
   "cleanUrls": true,
   "rewrites": [
     { "source": "/api/stats.php", "destination": "/api/stats" },

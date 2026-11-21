@@ -83,9 +83,9 @@ document.addEventListener('DOMContentLoaded', () => {
       _ts: ts
     };
 
-    // Try PHP endpoint first, with automatic Node.js fallback
+    // Transmit to serverless contact endpoint
     let response = null;
-    let endpointTried = 'api/contact.php';
+    let endpointTried = '/api/contact';
 
     try {
       response = await fetch(endpointTried, {
@@ -96,19 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         body: JSON.stringify(payload)
       });
-
-      // If PHP is not configured (e.g. returns 404 or raw text), try Node endpoint
-      if (response.status === 404 || response.status === 405) {
-        endpointTried = 'api/contact';
-        response = await fetch(endpointTried, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify(payload)
-        });
-      }
     } catch (networkErr) {
       console.warn('Backend fetch failed, attempting local fallback:', networkErr);
     }
