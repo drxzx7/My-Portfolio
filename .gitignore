@@ -30,3 +30,7 @@ yarn-error.log*
 .vercel
 
 package.json.bak
+
+# Local standalone dev server
+server.js
+.vercelignore
