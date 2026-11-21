@@ -1,0 +1,2148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmad Shuaib • Backend & AI Engineer | High-Performance Systems & DSA Specialist</title>
+  
+  <!-- SEO & Social OpenGraph Metadata -->
+  <meta name="description" content="Portfolio of Ahmad Shuaib (drxzx7). Electronics & Communication Engineering Scholar, Backend & AI Developer, Java & Spring Boot engineer, and 445+ LeetCode problem solver." />
+  <meta name="keywords" content="Ahmad Shuaib, drxzx7, x_drxzx_x, Backend Developer, Java, Spring Boot, JDBC, REST API, Swagger, API Gateway, Microservices, Eureka, AWS, LeetCode, DSA, System Design, Chennai" />
+  <meta name="author" content="Ahmad Shuaib" />
+
+  <meta property="og:title" content="Ahmad Shuaib • Backend & AI Engineer" />
+  <meta property="og:description" content="Explore projects, 1M+ system design architecture, LeetCode metrics (445+ solved), and AI tooling by Ahmad Shuaib." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Outfit, Plus Jakarta Sans, Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23ea005e%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><polyline points=%2216 18 22 12 16 6%22/><polyline points=%228 6 2 12 8 18%22/></svg>">
+</head>
+<body class="theme-dark">
+
+  <!-- Background Animated Grid, Canvas & Ambient Glows -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+  <div class="bg-glow glow-3"></div>
+  <canvas id="particleCanvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1;"></canvas>
+
+  <!-- CANVA WORKSPACE FLOATING NAVBAR -->
+  <header class="canva-topbar">
+    <a href="#hero" class="brand-wrapper">
+      <div class="brand-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="16 18 22 12 16 6"></polyline>
+          <polyline points="8 6 2 12 8 18"></polyline>
+        </svg>
+      </div>
+      <span class="brand-name">Ahmad Shuaib</span>
+      <span class="brand-tag">@drxzx7</span>
+    </a>
+
+    <!-- Navigation Links -->
+    <nav class="topbar-nav">
+      <a href="#hero" class="nav-link active">Home</a>
+      <a href="#architecture" class="nav-link">System Design</a>
+      <a href="#diagrams" class="nav-link">Flowcharts</a>
+      <a href="#api-explorer" class="nav-link">API Sandbox</a>
+      <a href="#leetcode" class="nav-link">LeetCode</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#terminal" class="nav-link">Terminal</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <!-- Controls & Badges -->
+    <div class="topbar-controls">
+      <!-- 🌓 Theme Switcher (Guaranteed Visible & Fitted In-Place in Top Navbar) -->
+      <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle Pink Dark / Aesthetic Light Theme" aria-label="Toggle Theme">
+        <span class="theme-icon">☀️</span>
+        <span class="theme-label">Light</span>
+      </button>
+
+      <!-- Vivian AI Assistant Pill -->
+      <button class="vivian-topbar-pill" id="vivianTopbarBtn" title="Launch Vivian AI (Claude-Powered System Architect)" aria-label="Open Vivian AI">
+        <span class="vivian-pill-dot"></span>
+        <span>✨</span>
+        <span class="vivian-btn-text">Vivian AI</span>
+      </button>
+
+      <!-- Compact Social Icon Buttons -->
+      <a href="https://leetcode.com/u/x_drxzx_x/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LeetCode Profile (445+ Solved)">⚡</a>
+      <a href="https://github.com/drxzx7" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub (@drxzx7)">🐙</a>
+      <a href="https://www.linkedin.com/in/ahmad-shuaib-75543037a" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile">💼</a>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation Menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- 🚀 HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <!-- Live Status Badge -->
+        <div class="status-pill">
+          <span class="pulse-dot"></span>
+          <span>Open for Dev Duels & High-Impact Quests</span>
+        </div>
+
+        <h1 class="hero-title">
+          Architecting <span class="gradient-text">Scalable Backends</span> & <span class="cyan-gradient-text">Intelligent AI</span> Systems.
+        </h1>
+
+        <p class="hero-subtitle">
+          Electronics & Communication Engineering Scholar based in Chennai, India. Specializing in high-throughput Java backends (Spring Boot, JDBC, HikariCP), low-latency system design, RESTful APIs, and cutting-edge AI integrations.
+        </p>
+
+        <div class="hero-quote">
+          "One Debug, Infinite Realms." — Ronin developer blending rigorous DSA mastery with distributed resilience.
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            <span>✨</span> <span>Explore Featured Work</span>
+          </a>
+          <a href="#diagrams" class="btn-secondary">
+            <span>📐</span> <span>Architecture Diagrams</span>
+          </a>
+          <button class="btn-secondary" data-open-modal="resumeModal">
+            <span>📄</span> <span>View Resume / CV</span>
+          </button>
+          <a href="#contact" class="btn-secondary">
+            <span>💬</span> <span>Get In Touch</span>
+          </a>
+        </div>
+
+        <!-- Hero Metrics Row -->
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <div class="metric-num gradient-text">445+</div>
+            <div class="metric-label">LeetCode Problems Solved</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num gradient-text">200+</div>
+            <div class="metric-label">Day Problem Solving Streak</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num gradient-text">16+</div>
+            <div class="metric-label">GitHub Repositories</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual / Avatar Showcase -->
+      <div class="hero-visual">
+        <div class="avatar-frame">
+          <div class="avatar-orbit"></div>
+          <div class="avatar-glow-ring"></div>
+          <div class="avatar-img-wrapper">
+            <img src="assets/img/shuaib-profile.jpg" alt="Ahmad Shuaib" class="avatar-img" />
+          </div>
+
+          <!-- Floating Orbit Pills -->
+          <div class="orbit-pill pill-1">
+            <span>☕</span> <span>Java & Spring Boot</span>
+          </div>
+          <div class="orbit-pill pill-2">
+            <span>🧠</span> <span>AI & LLM Workflows</span>
+          </div>
+          <div class="orbit-pill pill-3">
+            <span>⚡</span> <span>System Design & Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔄 INFINITE SLIDING TECH STACK MARQUEE TICKER -->
+  <section class="marquee-section" aria-label="Sliding Tech Stack">
+    <!-- Track 1: Leftward Scroll -->
+    <div class="marquee-container">
+      <div class="marquee-track">
+        <div class="marquee-item"><span class="marquee-icon">🍃</span> Spring Boot 3</div>
+        <div class="marquee-item"><span class="marquee-icon">📡</span> Netflix Eureka Server</div>
+        <div class="marquee-item"><span class="marquee-icon">☁️</span> AWS Cloud (ECS / RDS / S3)</div>
+        <div class="marquee-item"><span class="marquee-icon">☕</span> Java 17/21</div>
+        <div class="marquee-item"><span class="marquee-icon">⚡</span> JDBC & HikariCP</div>
+        <div class="marquee-item"><span class="marquee-icon">📜</span> RESTful APIs & Swagger</div>
+        <div class="marquee-item"><span class="marquee-icon">🚪</span> Spring Cloud Gateway</div>
+        <div class="marquee-item"><span class="marquee-icon">🐳</span> Docker Containers</div>
+        <div class="marquee-item"><span class="marquee-icon">⚡</span> Redis Distributed Cache</div>
+        <div class="marquee-item"><span class="marquee-icon">🐬</span> MySQL / InnoDB</div>
+        <div class="marquee-item"><span class="marquee-icon">🛡️</span> Resilience4j Circuit Breaker</div>
+        <div class="marquee-item"><span class="marquee-icon">🏗️</span> Terraform (IaC)</div>
+        <div class="marquee-item"><span class="marquee-icon">🐘</span> PostgreSQL</div>
+        <div class="marquee-item"><span class="marquee-icon">⚡</span> C++ STL & DSA</div>
+        <div class="marquee-item"><span class="marquee-icon">🐍</span> Python AI</div>
+      </div>
+      <!-- Duplicate Track for Seamless Infinite Loop -->
+      <div class="marquee-track" aria-hidden="true">
+        <div class="marquee-item"><span class="marquee-icon">🍃</span> Spring Boot 3</div>
+        <div class="marquee-item"><span class="marquee-icon">📡</span> Netflix Eureka Server</div>
+        <div class="marquee-item"><span class="marquee-icon">☁️</span> AWS Cloud (ECS / RDS / S3)</div>
+        <div class="marquee-item"><span class="marquee-icon">☕</span> Java 17/21</div>
+        <div class="marquee-item"><span class="marquee-icon">⚡</span> JDBC & HikariCP</div>
+        <div class="marquee-item"><span class="marquee-icon">📜</span> RESTful APIs & Swagger</div>
+        <div class="marquee-item"><span class="marquee-icon">🚪</span> Spring Cloud Gateway</div>
+        <div class="marquee-item"><span class="marquee-icon">🐳</span> Docker Containers</div>
+        <div class="marquee-item"><span class="marquee-icon">⚡</span> Redis Distributed Cache</div>
+        <div class="marquee-item"><span class="marquee-icon">🐬</span> MySQL / InnoDB</div>
+        <div class="marquee-item"><span class="marquee-icon">🛡️</span> Resilience4j Circuit Breaker</div>
+        <div class="marquee-item"><span class="marquee-icon">🏗️</span> Terraform (IaC)</div>
+        <div class="marquee-item"><span class="marquee-icon">🐘</span> PostgreSQL</div>
+        <div class="marquee-item"><span class="marquee-icon">⚡</span> C++ STL & DSA</div>
+        <div class="marquee-item"><span class="marquee-icon">🐍</span> Python AI</div>
+      </div>
+    </div>
+
+    <!-- Track 2: Reverse Rightward Scroll -->
+    <div class="marquee-container" style="margin-top: 14px;">
+      <div class="marquee-track track-reverse">
+        <div class="marquee-item"><span class="marquee-icon">📦</span> Spring Data JPA / Hibernate</div>
+        <div class="marquee-item"><span class="marquee-icon">📖</span> OpenAPI 3.0 Contract</div>
+        <div class="marquee-item"><span class="marquee-icon">📨</span> Apache Kafka Event Streaming</div>
+        <div class="marquee-item"><span class="marquee-icon">🌐</span> AWS CloudFront CDN</div>
+        <div class="marquee-item"><span class="marquee-icon">🗄️</span> AWS RDS Multi-AZ Aurora</div>
+        <div class="marquee-item"><span class="marquee-icon">⚖️</span> Client-Side Load Balancing</div>
+        <div class="marquee-item"><span class="marquee-icon">⚙️</span> Nginx Reverse Proxy</div>
+        <div class="marquee-item"><span class="marquee-icon">🔑</span> JWT & Spring Security</div>
+        <div class="marquee-item"><span class="marquee-icon">🐘</span> PHP 8.x Hardened API</div>
+        <div class="marquee-item"><span class="marquee-icon">🐙</span> GitHub Actions CI/CD</div>
+        <div class="marquee-item"><span class="marquee-icon">📊</span> Actuator & Prometheus Metrics</div>
+        <div class="marquee-item"><span class="marquee-icon">🔍</span> Distributed Tracing (Micrometer)</div>
+        <div class="marquee-item"><span class="marquee-icon">🔒</span> SSL/TLS 256-Bit Encryption</div>
+      </div>
+      <!-- Duplicate Track for Seamless Infinite Loop -->
+      <div class="marquee-track track-reverse" aria-hidden="true">
+        <div class="marquee-item"><span class="marquee-icon">📦</span> Spring Data JPA / Hibernate</div>
+        <div class="marquee-item"><span class="marquee-icon">📖</span> OpenAPI 3.0 Contract</div>
+        <div class="marquee-item"><span class="marquee-icon">📨</span> Apache Kafka Event Streaming</div>
+        <div class="marquee-item"><span class="marquee-icon">🌐</span> AWS CloudFront CDN</div>
+        <div class="marquee-item"><span class="marquee-icon">🗄️</span> AWS RDS Multi-AZ Aurora</div>
+        <div class="marquee-item"><span class="marquee-icon">⚖️</span> Client-Side Load Balancing</div>
+        <div class="marquee-item"><span class="marquee-icon">⚙️</span> Nginx Reverse Proxy</div>
+        <div class="marquee-item"><span class="marquee-icon">🔑</span> JWT & Spring Security</div>
+        <div class="marquee-item"><span class="marquee-icon">🐘</span> PHP 8.x Hardened API</div>
+        <div class="marquee-item"><span class="marquee-icon">🐙</span> GitHub Actions CI/CD</div>
+        <div class="marquee-item"><span class="marquee-icon">📊</span> Actuator & Prometheus Metrics</div>
+        <div class="marquee-item"><span class="marquee-icon">🔍</span> Distributed Tracing (Micrometer)</div>
+        <div class="marquee-item"><span class="marquee-icon">🔒</span> SSL/TLS 256-Bit Encryption</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⚡ 1M+ HIGH-SCALE SYSTEM DESIGN ARCHITECTURE -->
+  <section class="section-container" id="architecture">
+    <div class="section-header">
+      <div class="section-tag">
+        <span>⚡</span> <span>High-Scale Engineering</span>
+      </div>
+      <h2 class="section-title">
+        Engineered for <span class="gradient-text">1,000,000+ Daily Visitors</span>
+      </h2>
+      <p class="section-subtitle">
+        Strict adherence to core System Design rules: Zero-cost static caching at edge CDN nodes, asynchronous microservice backend pipelines, and hardened security layers.
+      </p>
+    </div>
+
+    <div class="sysdesign-card">
+      <div class="sysdesign-grid">
+        <div class="sys-feature-box">
+          <div class="sys-icon">🌐</div>
+          <h4>Edge CDN & Anycast Routing</h4>
+          <p>
+            Static-first HTML/CSS/JS assets distributed across 300+ edge locations. Requests are fulfilled with sub-25ms TTFB using Stale-While-Revalidate caching policies.
+          </p>
+        </div>
+
+        <div class="sys-feature-box">
+          <div class="sys-icon">🛡️</div>
+          <h4>Anti-DDoS & IP Rate Throttling</h4>
+          <p>
+            Token-bucket request throttling at both PHP and Node layers restricts malicious automated bursts. Exceeding limits returns HTTP 429 with polite retry-after headers.
+          </p>
+        </div>
+
+        <div class="sys-feature-box">
+          <div class="sys-icon">🔒</div>
+          <h4>Hardened PHP Security Protocols</h4>
+          <p>
+            Strict input sanitation, UTF-8 normalization, exclusion of null bytes, honeypot bot traps, CSP, and atomic file locking (<code>flock(LOCK_EX)</code>) preventing race conditions.
+          </p>
+        </div>
+
+        <div class="sys-feature-box">
+          <div class="sys-icon">⚡</div>
+          <h4>Zero Server Overload (Decoupled)</h4>
+          <p>
+            Heavy static content never touches the application runtime. Backend endpoints are lean, stateless, and microservices-ready for horizontal container auto-scaling.
+          </p>
+        </div>
+      </div>
+
+      <!-- Architecture Pipeline Diagram -->
+      <div class="arch-pipeline">
+        <div class="pipe-node">
+          <div class="pipe-icon">👥</div>
+          <div class="pipe-title">1M+ Users</div>
+          <div class="pipe-desc">Global Inbound</div>
+        </div>
+
+        <div class="pipe-arrow">➜</div>
+
+        <div class="pipe-node">
+          <div class="pipe-icon">☁️</div>
+          <div class="pipe-title">Anycast CDN</div>
+          <div class="pipe-desc">Edge Cache / DNS</div>
+        </div>
+
+        <div class="pipe-arrow">➜</div>
+
+        <div class="pipe-node">
+          <div class="pipe-icon">🛡️</div>
+          <div class="pipe-title">Security Firewall</div>
+          <div class="pipe-desc">Rate Limit & WAF</div>
+        </div>
+
+        <div class="pipe-arrow">➜</div>
+
+        <div class="pipe-node">
+          <div class="pipe-icon">🐘</div>
+          <div class="pipe-title">PHP / Node API</div>
+          <div class="pipe-desc">Stateless Worker</div>
+        </div>
+
+        <div class="pipe-arrow">➜</div>
+
+        <div class="pipe-node">
+          <div class="pipe-icon">💾</div>
+          <div class="pipe-title">Atomic Storage</div>
+          <div class="pipe-desc">flock(LOCK_EX)</div>
+        </div>
+      </div>
+
+      <!-- 📈 LIVE DISTRIBUTED STRESS TEST & TRAFFIC SIMULATOR -->
+      <div class="simulator-card">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 14px;">
+          <div>
+            <div style="font-family: 'Fira Code', monospace; font-size: 0.8rem; color: var(--accent-rose); font-weight: 700; text-transform: uppercase;">Interactive System Design Lab</div>
+            <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 800; color: #fff; margin-top: 4px;">1M+ Inbound Traffic & Fault Simulator</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px; max-width: 680px;">Adjust real-time load parameters to observe how Edge CDN Caching, Spring Boot WebFlux, and Resilience4j handle sudden traffic spikes and cascading failures.</p>
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <span class="spec-badge">Dynamic Stress Engine</span>
+            <span class="spec-badge">Target: 1,000,000+ RPS Scale</span>
+          </div>
+        </div>
+
+        <div class="sim-controls-grid">
+          <div class="sim-control-group">
+            <label class="sim-label">Inbound Traffic Spike: <span class="sim-val" id="simRpsDisplay">10,000 RPS</span></label>
+            <input type="range" class="sim-slider" id="simRpsSlider" min="1000" max="50000" step="1000" value="10000" />
+            <span style="font-size: 0.72rem; color: var(--text-muted); font-family: 'Fira Code', monospace;">1,000 RPS to 50,000 RPS (Peak Burst)</span>
+          </div>
+
+          <div class="sim-control-group">
+            <label class="sim-label">CDN Edge Cache Hit Ratio: <span class="sim-val" id="simCacheDisplay">98.5%</span></label>
+            <input type="range" class="sim-slider" id="simCacheSlider" min="80" max="99.5" step="0.5" value="98.5" />
+            <span style="font-size: 0.72rem; color: var(--text-muted); font-family: 'Fira Code', monospace;">CloudFront Anycast Edge Absorption</span>
+          </div>
+
+          <div class="sim-control-group" style="justify-content: center;">
+            <label class="sim-label" style="align-items: center; gap: 10px; cursor: pointer;">
+              <span>Simulate Downstream Network Failure:</span>
+              <input type="checkbox" id="simFaultToggle" style="accent-color: #ef4444; width: 18px; height: 18px; cursor: pointer;" />
+            </label>
+            <span style="font-size: 0.72rem; color: var(--text-muted); font-family: 'Fira Code', monospace;">Inject 55% error rate to test Resilience4j trip</span>
+          </div>
+        </div>
+
+        <div class="sim-metrics-grid">
+          <div class="sim-metric-box">
+            <div class="sim-metric-val gradient-text" id="metricOffload">98.5%</div>
+            <div class="sim-metric-label">Edge Cache Offload</div>
+          </div>
+
+          <div class="sim-metric-box">
+            <div class="sim-metric-val" id="metricOriginLoad" style="color: #00d2d3;">150 RPS</div>
+            <div class="sim-metric-label">Origin Backend Load</div>
+          </div>
+
+          <div class="sim-metric-box">
+            <div class="sim-metric-val" id="metricLatency" style="color: #10b981;">15.4 ms</div>
+            <div class="sim-metric-label">Mean Global Latency</div>
+          </div>
+
+          <div class="sim-metric-box">
+            <div class="sim-metric-val" id="metricDbOps" style="color: #fbbf24;">22w / 128r</div>
+            <div class="sim-metric-label">Aurora DB TPS (Write / Read)</div>
+          </div>
+
+          <div class="sim-metric-box">
+            <div class="sim-metric-val" id="metricCbStatus"><span style="color: #10b981; font-weight: 800;">CLOSED (Healthy)</span></div>
+            <div class="sim-metric-label">Resilience4j Circuit</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ☁️ SPRING BOOT + EUREKA + MICROSERVICES + AWS ARCHITECTURE DEEP-DIVE -->
+      <div class="microservices-showcase">
+        <div class="ms-header">
+          <div>
+            <div style="font-family: 'Fira Code', monospace; font-size: 0.8rem; color: var(--accent-rose); font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">
+              Distributed Systems Blueprint
+            </div>
+            <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.6rem; font-weight: 800; color: #fff;">
+              Spring Boot + Netflix Eureka + Microservices + AWS Cloud
+            </h3>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); margin-top: 6px; max-width: 720px;">
+              Production-tested distributed architecture ensuring horizontal elasticity, zero single point of failure (SPOF), and seamless service orchestration across AWS availability zones.
+            </p>
+          </div>
+          <div class="ms-badge-group">
+            <span class="ms-badge badge-spring">Spring Boot 3</span>
+            <span class="ms-badge badge-eureka">Eureka Discovery</span>
+            <span class="ms-badge badge-aws">AWS ECS / RDS</span>
+            <span class="ms-badge badge-cloud">Resilience4j</span>
+          </div>
+        </div>
+
+        <div class="ms-topology-grid">
+          <!-- 1. Eureka Server -->
+          <div class="ms-card">
+            <div class="ms-card-icon">📡</div>
+            <h4 class="ms-card-title">Netflix Eureka Server</h4>
+            <p class="ms-card-desc">
+              Decentralized Service Registry & Discovery. Services register dynamically at boot and maintain lease renewal with 30s heartbeats. Eliminates hardcoded IP bindings and enables zero-downtime rolling updates.
+            </p>
+            <div class="ms-card-pills">
+              <span class="ms-pill">@EnableEurekaServer</span>
+              <span class="ms-pill">Client-Side LB</span>
+              <span class="ms-pill">Self-Preservation</span>
+            </div>
+          </div>
+
+          <!-- 2. Spring Cloud Gateway -->
+          <div class="ms-card">
+            <div class="ms-card-icon">🚪</div>
+            <h4 class="ms-card-title">Spring Cloud API Gateway</h4>
+            <p class="ms-card-desc">
+              Unified reactive reverse-proxy ingress. Enforces stateless JWT validation, SSL termination, path-based routing, and distributed Redis rate-limiting before requests touch downstream domain microservices.
+            </p>
+            <div class="ms-card-pills">
+              <span class="ms-pill">Reactive WebFlux</span>
+              <span class="ms-pill">JWT Filter</span>
+              <span class="ms-pill">CORS Policy</span>
+            </div>
+          </div>
+
+          <!-- 3. Resilience4j Fault Tolerance -->
+          <div class="ms-card">
+            <div class="ms-card-icon">🛡️</div>
+            <h4 class="ms-card-title">Resilience4j Circuit Breaker</h4>
+            <p class="ms-card-desc">
+              Prevents cascading network failures. Implements sliding-window failure rate tracking (CLOSED → OPEN → HALF-OPEN), bulkhead thread pool isolation, and deterministic fallback responses for maximum resiliency.
+            </p>
+            <div class="ms-card-pills">
+              <span class="ms-pill">CircuitBreaker</span>
+              <span class="ms-pill">Retry Pattern</span>
+              <span class="ms-pill">Bulkhead</span>
+            </div>
+          </div>
+
+          <!-- 4. AWS Cloud Infrastructure -->
+          <div class="ms-card">
+            <div class="ms-card-icon">☁️</div>
+            <h4 class="ms-card-title">AWS Production Topology</h4>
+            <p class="ms-card-desc">
+              Multi-AZ deployment: Containerized microservices running on <strong>AWS ECS Fargate</strong>, managed relational data on <strong>AWS RDS (Aurora MySQL)</strong> with read replicas, <strong>S3 + CloudFront</strong> for global edge delivery.
+            </p>
+            <div class="ms-card-pills">
+              <span class="ms-pill">AWS ECS Fargate</span>
+              <span class="ms-pill">AWS RDS Multi-AZ</span>
+              <span class="ms-pill">Route 53 & ALB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📊 SYSTEM DESIGN DIAGRAMS & CONNECTION FLOWCHARTS -->
+  <section class="section-container" id="diagrams">
+    <div class="section-header">
+      <div class="section-tag">
+        <span>📐</span> <span>Architectural Blueprints</span>
+      </div>
+      <h2 class="section-title">
+        System Design <span class="gradient-text">Diagrams & Flowcharts</span>
+      </h2>
+      <p class="section-subtitle">
+        Visual blueprints showcasing service discovery, inter-service communication protocols, Spring Cloud API Gateway, high-throughput JDBC connection pooling, RESTful Swagger contracts, and CQRS replication.
+      </p>
+    </div>
+
+    <!-- Diagram Switcher Tabs -->
+    <div class="diagram-tabs-nav">
+      <button class="diagram-tab-btn active" data-tab="tab-eureka-flow">
+        <span>📡</span> <span>Eureka & Microservices</span>
+      </button>
+      <button class="diagram-tab-btn" data-tab="tab-gateway-deep">
+        <span>🚪</span> <span>API Gateway Pipeline</span>
+      </button>
+      <button class="diagram-tab-btn" data-tab="tab-jdbc-arch">
+        <span>⚡</span> <span>JDBC & HikariCP Architecture</span>
+      </button>
+      <button class="diagram-tab-btn" data-tab="tab-rest-swagger">
+        <span>📜</span> <span>REST APIs & Swagger / OpenAPI</span>
+      </button>
+      <button class="diagram-tab-btn" data-tab="tab-db-scale">
+        <span>🗄️</span> <span>1M+ CQRS & DB Replication</span>
+      </button>
+      <button class="diagram-tab-btn" data-tab="tab-heartbeat-protocol">
+        <span>🔄</span> <span>Eureka Heartbeat Protocol</span>
+      </button>
+    </div>
+
+    <!-- ==========================================
+         DIAGRAM 1: SPRING BOOT + EUREKA CONNECTION FLOW
+         ========================================== -->
+    <div class="diagram-view-panel active" id="tab-eureka-flow">
+      <div class="diagram-board">
+        <div class="diagram-board-header">
+          <div class="diagram-title-group">
+            <h3>Microservices Topology & Dynamic Eureka Discovery</h3>
+            <p>End-to-end request routing from ingress through Eureka Service Registry, Resilience4j Circuit Breakers, to distributed data stores.</p>
+          </div>
+          <div class="diagram-spec-badges">
+            <span class="spec-badge">Pattern: API Gateway + Service Registry</span>
+            <span class="spec-badge">Discovery: Netflix Eureka</span>
+            <span class="spec-badge">Fault Tolerance: Resilience4j</span>
+          </div>
+        </div>
+
+        <div class="flow-canvas">
+          <!-- Row 1: Clients & Ingress -->
+          <div class="flow-row">
+            <div class="flow-node-card">
+              <div class="node-header">
+                <span class="node-badge badge-green">Entry Point</span>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">TLS 1.3</span>
+              </div>
+              <h4 class="node-title"><span>🌐</span> Global Client Traffic</h4>
+              <p class="node-desc">Single Page Apps, Mobile Clients, and API consumers initiating encrypted HTTPS requests.</p>
+              <div class="node-specs">
+                <div class="node-spec-item">Protocol: <span class="spec-val">HTTPS / WebSockets</span></div>
+                <div class="node-spec-item">Authentication: <span class="spec-val">Bearer JWT Token</span></div>
+              </div>
+            </div>
+
+            <div style="color: var(--accent-rose); font-size: 1.5rem; font-weight: 800;">➔</div>
+
+            <div class="flow-node-card highlight-gateway">
+              <div class="node-header">
+                <span class="node-badge badge-purple">Port 8080</span>
+                <span style="font-size: 0.75rem; color: #a29bfe;">Reactive Ingress</span>
+              </div>
+              <h4 class="node-title"><span>🚪</span> Spring Cloud API Gateway</h4>
+              <p class="node-desc">Reactive Netty reverse proxy. Extracts and verifies JWT claims, enforces distributed Redis rate limits, and strips sensitive internal headers.</p>
+              <div class="node-specs">
+                <div class="node-spec-item">Engine: <span class="spec-val">Spring WebFlux (Netty)</span></div>
+                <div class="node-spec-item">Filters: <span class="spec-val">JwtAuthFilter, RedisRateLimiter</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connector -->
+          <div class="flow-connector-vertical">
+            <span style="color: var(--text-muted); font-size: 0.75rem;">Service Lookup & Dynamic Routing</span>
+            <div class="connector-line"></div>
+            <div class="connector-arrow">▼</div>
+          </div>
+
+          <!-- Row 2: Eureka Discovery Registry -->
+          <div class="flow-row">
+            <div class="flow-node-card highlight-eureka" style="max-width: 580px; width: 100%;">
+              <div class="node-header">
+                <span class="node-badge badge-gold">Port 8761</span>
+                <span style="font-size: 0.75rem; color: #fbbf24;">Dynamic Service Registry</span>
+              </div>
+              <h4 class="node-title"><span>📡</span> Netflix Eureka Server Cluster (@EnableEurekaServer)</h4>
+              <p class="node-desc">Maintains in-memory registry of all active microservice instances. Synchronizes state across multi-AZ Eureka peers, tracks 30-second heartbeat renewals, and pushes registry deltas to clients.</p>
+              <div class="node-specs" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                <div class="node-spec-item">Registry: <span class="spec-val">ConcurrentHashMap</span></div>
+                <div class="node-spec-item">Heartbeat: <span class="spec-val">30s Renewal / 90s Evict</span></div>
+                <div class="node-spec-item">Load Balancer: <span class="spec-val">Spring Cloud LoadBalancer</span></div>
+                <div class="node-spec-item">Protection: <span class="spec-val">Self-Preservation Mode</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connector -->
+          <div class="flow-connector-vertical">
+            <span style="color: var(--text-muted); font-size: 0.75rem;">Client-Side Load Balanced Dispatch</span>
+            <div class="connector-line"></div>
+            <div class="connector-arrow">▼</div>
+          </div>
+
+          <!-- Row 3: Domain Microservices -->
+          <div class="flow-row">
+            <!-- Service A -->
+            <div class="flow-node-card">
+              <div class="node-header">
+                <span class="node-badge badge-green">Port 8081</span>
+                <span style="font-size: 0.72rem; color: var(--text-muted);">Spring Boot 3</span>
+              </div>
+              <h4 class="node-title"><span>🔑</span> Auth & Identity Service</h4>
+              <p class="node-desc">Issues signed JWTs, manages role-based access control (RBAC), and coordinates password hashing via BCrypt with salt rounds.</p>
+              <div class="node-specs">
+                <div class="node-spec-item">Security: <span class="spec-val">Spring Security 6</span></div>
+                <div class="node-spec-item">Resilience: <span class="spec-val">CircuitBreaker (50% Trip)</span></div>
+              </div>
+            </div>
+
+            <!-- Service B -->
+            <div class="flow-node-card">
+              <div class="node-header">
+                <span class="node-badge badge-cyan">Port 8082</span>
+                <span style="font-size: 0.72rem; color: var(--text-muted);">Java 21</span>
+              </div>
+              <h4 class="node-title"><span>⚡</span> DSA Runner & Code Engine</h4>
+              <p class="node-desc">High-throughput task queue executing test cases with sandboxed child processes. Thread-pool bounded execution prevents noisy neighbor starvation.</p>
+              <div class="node-specs">
+                <div class="node-spec-item">Concurrency: <span class="spec-val">ThreadPoolExecutor</span></div>
+                <div class="node-spec-item">Resilience: <span class="spec-val">Bulkhead (Max 25 Threads)</span></div>
+              </div>
+            </div>
+
+            <!-- Service C -->
+            <div class="flow-node-card">
+              <div class="node-header">
+                <span class="node-badge badge-purple">Port 8083</span>
+                <span style="font-size: 0.72rem; color: var(--text-muted);">Spring Boot 3</span>
+              </div>
+              <h4 class="node-title"><span>👤</span> User & Progress Service</h4>
+              <p class="node-desc">Tracks problem solve statuses, submission analytics, and streak tracking. Employs Hibernate L2 Cache to eliminate duplicate DB reads.</p>
+              <div class="node-specs">
+                <div class="node-spec-item">ORM: <span class="spec-val">Spring Data JPA / Hibernate</span></div>
+                <div class="node-spec-item">Resilience: <span class="spec-val">Retry (3x Backoff)</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connector -->
+          <div class="flow-connector-vertical">
+            <span style="color: var(--text-muted); font-size: 0.75rem;">HikariCP Connection Pool & Redis Driver</span>
+            <div class="connector-line"></div>
+            <div class="connector-arrow">▼</div>
+          </div>
+
+          <!-- Row 4: Distributed Storage Tier -->
+          <div class="flow-row">
+            <div class="flow-node-card highlight-db">
+              <div class="node-header">
+                <span class="node-badge badge-cyan">In-Memory Cache</span>
+                <span style="font-size: 0.75rem; color: #00d2d3;">Port 6379</span>
+              </div>
+              <h4 class="node-title"><span>⚡</span> Redis Distributed Cache Cluster</h4>
+              <p class="node-desc">Sub-millisecond latency store for user sessions, distributed rate limiting tokens, and sorted set (ZSET) rankings for LeetCode leaderboards.</p>
+              <div class="node-specs">
+                <div class="node-spec-item">Eviction: <span class="spec-val">volatile-lru</span></div>
+                <div class="node-spec-item">Latency: <span class="spec-val">&lt; 1.5ms avg</span></div>
+              </div>
+            </div>
+
+            <div class="flow-node-card highlight-db">
+              <div class="node-header">
+                <span class="node-badge badge-green">Relational DB</span>
+                <span style="font-size: 0.75rem; color: #10b981;">Port 3306</span>
+              </div>
+              <h4 class="node-title"><span>🐬</span> AWS RDS Aurora MySQL (Multi-AZ)</h4>
+              <p class="node-desc">ACID compliant relational storage with InnoDB storage engine. Uses HikariCP connection pool, composite B-Tree indexes, and automated daily snapshots.</p>
+              <div class="node-specs">
+                <div class="node-spec-item">Engine: <span class="spec-val">MySQL 8.0 InnoDB</span></div>
+                <div class="node-spec-item">Pool: <span class="spec-val">HikariCP (maxPoolSize=30)</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         DIAGRAM: SPRING CLOUD API GATEWAY INGRESS PIPELINE
+         ========================================== -->
+    <div class="diagram-view-panel" id="tab-gateway-deep">
+      <div class="diagram-board">
+        <div class="diagram-board-header">
+          <div class="diagram-title-group">
+            <h3>Spring Cloud API Gateway: Reactive Ingress & Filter Pipeline</h3>
+            <p>Non-blocking Netty reverse-proxy architecture: Route Predicates, Pre-Filters, JWT Claim Extraction, Redis Rate Limiting, and Client-Side Load Balancing.</p>
+          </div>
+          <div class="diagram-spec-badges">
+            <span class="spec-badge">Engine: Spring WebFlux (Netty)</span>
+            <span class="spec-badge">Concurrency: 50,000+ RPS</span>
+            <span class="spec-badge">Algorithm: Token Bucket (Redis)</span>
+          </div>
+        </div>
+
+        <div class="flow-canvas">
+          <!-- Gateway Pipeline Steps -->
+          <div class="flow-row">
+            <!-- Stage 1 -->
+            <div class="flow-node-card highlight-gateway">
+              <div class="node-header">
+                <span class="node-badge badge-purple">Stage 1</span>
+                <span style="font-size: 0.72rem; color: #a29bfe;">Route Predicate</span>
+              </div>
+              <h4 class="node-title"><span>🧭</span> Predicate Evaluation</h4>
+              <p class="node-desc">Evaluates incoming request criteria against registered route definitions in <code>application.yml</code> before dispatching into filter chains.</p>
+              <div class="node-specs">
+                <div class="node-spec-item">Path: <span class="spec-val">/api/v1/users/**, /api/v1/dsa/**</span></div>
+                <div class="node-spec-item">Method: <span class="spec-val">GET, POST, PUT, DELETE</span></div>
+                <div class="node-spec-item">Header: <span class="spec-val">X-Client-Version: 2.x</span></div>
+              </div>
+            </div>
+
+            <div style="color: var(--accent-rose); font-size: 1.5rem; font-weight: 800;">➔</div>
+
+            <!-- Stage 2 -->
+            <div class="flow-node-card highlight-eureka">
+              <div class="node-header">
+                <span class="node-badge badge-gold">Stage 2</span>
+                <span style="font-size: 0.72rem; color: #fbbf24;">Pre-Filter Chain</span>
+              </div>
+              <h4 class="node-title"><span>🛡️</span> Security & Rate Limiter</h4>
+              <p class="node-desc">Executes ordered non-blocking filters: validates Bearer JWT signatures, enforces CORS, and queries Redis token-bucket rate limiter.</p>
+              <div class="node-specs">
+                <div class="node-spec-item">JWT Validation: <span class="spec-val">RSA256 / Claims Decoded</span></div>
+                <div class="node-spec-item">Rate Limiter: <span class="spec-val">Redis Lua (20 rps / 40 burst)</span></div>
+                <div class="node-spec-item">Context Injection: <span class="spec-val">X-User-Id, X-User-Role</span></div>
+              </div>
+            </div>
+
+            <div style="color: var(--accent-rose); font-size: 1.5rem; font-weight: 800;">➔</div>
+
+            <!-- Stage 3 -->
+            <div class="flow-node-card highlight-db">
+              <div class="node-header">
+                <span class="node-badge badge-cyan">Stage 3</span>
+                <span style="font-size: 0.72rem; color: #00d2d3;">Dynamic Dispatch</span>
+              </div>
+              <h4 class="node-title"><span>⚖️</span> Eureka Service Routing</h4>
+              <p class="node-desc">Resolves logical microservice IDs (<code>lb://DSA-SERVICE</code>) via local Eureka registry and dispatches via Spring Cloud LoadBalancer.</p>
+              <div class="node-specs">
+                <div class="node-spec-item">Target URI: <span class="spec-val">lb://AUTH-SERVICE, lb://DSA-CORE</span></div>
+                <div class="node-spec-item">Circuit Breaker: <span class="spec-val">Resilience4j Fallback URI</span></div>
+                <div class="node-spec-item">Tracing: <span class="spec-val">Micrometer TraceId Injected</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gateway Configuration Snippet Box -->
+          <div class="code-snippet-box">
+            <span class="code-comment"># Spring Cloud Gateway Route Definition (application.yml)</span><br/>
+            <span class="code-keyword">spring:</span><br/>
+            &nbsp;&nbsp;<span class="code-keyword">cloud:</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">gateway:</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">routes:</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="code-attr">id:</span> <span class="code-val">dsa-service-route</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-attr">uri:</span> <span class="code-val">lb://DSA-SERVICE</span> <span class="code-comment"># Discovered dynamically via Eureka</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-attr">predicates:</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="code-val">Path=/api/v1/dsa/**</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-attr">filters:</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="code-val">name: RequestRateLimiter</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-attr">args:</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-attr">redis-rate-limiter.replenishRate:</span> <span class="code-val">25</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-attr">redis-rate-limiter.burstCapacity:</span> <span class="code-val">50</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="code-val">name: CircuitBreaker</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-attr">args:</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-attr">name: dsaFallbackCmd</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-attr">fallbackUri:</span> <span class="code-val">forward:/fallback/dsa-unavailable</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         DIAGRAM: JDBC & HIKARICP CONNECTION ARCHITECTURE
+         ========================================== -->
+    <div class="diagram-view-panel" id="tab-jdbc-arch">
+      <div class="diagram-board">
+        <div class="diagram-board-header">
+          <div class="diagram-title-group">
+            <h3>Enterprise JDBC & HikariCP High-Throughput Connection Pipeline</h3>
+            <p>Low-level Java Database Connectivity: HikariCP pool optimization, pre-compiled SQL statements, explicit ACID transaction boundaries, and memory-safe streaming ResultSets.</p>
+          </div>
+          <div class="diagram-spec-badges">
+            <span class="spec-badge">Driver: mysql-connector-j</span>
+            <span class="spec-badge">Pool: HikariCP (P99 &lt; 0.5ms)</span>
+            <span class="spec-badge">ACID: conn.setAutoCommit(false)</span>
+          </div>
+        </div>
+
+        <div class="flow-canvas">
+          <div class="flow-row">
+            <!-- Node 1 -->
+            <div class="flow-node-card highlight-eureka">
+              <div class="node-header">
+                <span class="node-badge badge-gold">HikariCP Pool</span>
+                <span style="font-size: 0.72rem; color: #fbbf24;">Zero Lock Contention</span>
+              </div>
+              <h4 class="node-title"><span>⚡</span> HikariDataSource</h4>
+              <p class="node-desc">Ultra-fast connection pool using bytecode instrumentation and <code>FastList</code>. Eliminates synchronized block overhead under concurrent worker threads.</p>
+              <div class="node-specs">
+                <div class="node-spec-item">maximumPoolSize: <span class="spec-val">30 Connections</span></div>
+                <div class="node-spec-item">minimumIdle: <span class="spec-val">10 Connections</span></div>
+                <div class="node-spec-item">connectionTimeout: <span class="spec-val">20,000ms</span></div>
+                <div class="node-spec-item">idleTimeout: <span class="spec-val">300,000ms</span></div>
+              </div>
+            </div>
+
+            <div style="color: var(--accent-rose); font-size: 1.5rem; font-weight: 800;">➔</div>
+
+            <!-- Node 2 -->
+            <div class="flow-node-card highlight-gateway">
+              <div class="node-header">
+                <span class="node-badge badge-purple">Pre-Compiled SQL</span>
+                <span style="font-size: 0.72rem; color: #a29bfe;">SQL Injection Shield</span>
+              </div>
+              <h4 class="node-title"><span>🔒</span> PreparedStatement</h4>
+              <p class="node-desc">Pre-compiles the SQL query template on the database engine. Parameter bindings are strongly typed, eradicating SQL injection vectors completely.</p>
+              <div class="node-specs">
+                <div class="node-spec-item">Compilation: <span class="spec-val">Prepared Server-Side Plan</span></div>
+                <div class="node-spec-item">Type Safety: <span class="spec-val">pstmt.setLong(), pstmt.setString()</span></div>
+                <div class="node-spec-item">Batching: <span class="spec-val">pstmt.addBatch() / executeBatch()</span></div>
+              </div>
+            </div>
+
+            <div style="color: var(--accent-rose); font-size: 1.5rem; font-weight: 800;">➔</div>
+
+            <!-- Node 3 -->
+            <div class="flow-node-card highlight-db">
+              <div class="node-header">
+                <span class="node-badge badge-green">ACID Guard</span>
+                <span style="font-size: 0.72rem; color: #10b981;">Atomic Boundaries</span>
+              </div>
+              <h4 class="node-title"><span>🛡️</span> Transaction Manager</h4>
+              <p class="node-desc">Disables auto-commit to guarantee atomic all-or-nothing execution across related tables. Issues <code>conn.commit()</code> or automatic <code>conn.rollback()</code> on failure.</p>
+              <div class="node-specs">
+                <div class="node-spec-item">Isolation: <span class="spec-val">TRANSACTION_READ_COMMITTED</span></div>
+                <div class="node-spec-item">Atomicity: <span class="spec-val">Rollback on any SQLException</span></div>
+                <div class="node-spec-item">Streaming: <span class="spec-val">fetchSize=1000 (Zero OOM)</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- JDBC Code Implementation Snippet -->
+          <div class="code-snippet-box">
+            <span class="code-comment">// High-Performance Production JDBC Transaction Pattern</span><br/>
+            <span class="code-keyword">String</span> sql = <span class="code-val">"INSERT INTO problem_submissions (user_id, problem_id, status, memory_kb) VALUES (?, ?, ?, ?)"</span>;<br/>
+            <span class="code-keyword">try</span> (<span class="code-keyword">Connection</span> conn = dataSource.getConnection();<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">PreparedStatement</span> pstmt = conn.prepareStatement(sql)) {<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;conn.setAutoCommit(<span class="code-keyword">false</span>); <span class="code-comment">// Explicit ACID Transaction Boundary</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;pstmt.setLong(<span class="code-val">1</span>, submission.getUserId());<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;pstmt.setLong(<span class="code-val">2</span>, submission.getProblemId());<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;pstmt.setString(<span class="code-val">3</span>, <span class="code-val">"ACCEPTED"</span>);<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;pstmt.setInt(<span class="code-val">4</span>, submission.getMemoryKb());<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">int</span> rowsAffected = pstmt.executeUpdate();<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;conn.commit(); <span class="code-comment">// Commit only if execution succeeded</span><br/>
+            } <span class="code-keyword">catch</span> (<span class="code-keyword">SQLException</span> ex) {<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;conn.rollback(); <span class="code-comment">// Guaranteed atomicity: zero orphan state</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">throw new</span> DataAccessException(<span class="code-val">"JDBC Execution Failed"</span>, ex);<br/>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         DIAGRAM: REST APIS & SWAGGER / OPENAPI 3.0 CONTRACT
+         ========================================== -->
+    <div class="diagram-view-panel" id="tab-rest-swagger">
+      <div class="diagram-board">
+        <div class="diagram-board-header">
+          <div class="diagram-title-group">
+            <h3>RESTful Architecture & OpenAPI 3.0 / Swagger Contract Specification</h3>
+            <p>Industry-standard RESTful API design: Clean resource endpoints, strict HTTP verb semantics, DTO validation, and automated Swagger UI live documentation.</p>
+          </div>
+          <div class="diagram-spec-badges">
+            <span class="swagger-pill">Swagger / OpenAPI 3.0</span>
+            <span class="spec-badge">Richardson Maturity Level 3</span>
+            <span class="spec-badge">Validation: Jakarta Bean Validation</span>
+          </div>
+        </div>
+
+        <div class="flow-canvas">
+          <!-- REST API Endpoints Specification Table -->
+          <div style="background: rgba(14, 15, 23, 0.85); border: 1px solid var(--glass-border-subtle); border-radius: var(--radius-md); overflow-x: auto;">
+            <table class="rest-api-table">
+              <thead>
+                <tr>
+                  <th>Method</th>
+                  <th>Endpoint</th>
+                  <th>HTTP Status</th>
+                  <th>Description</th>
+                  <th>Swagger Annotation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="rest-badge rest-get">GET</span></td>
+                  <td><code>/api/v1/problems</code></td>
+                  <td><span style="color: #10b981; font-weight: 700;">200 OK</span></td>
+                  <td>Retrieve paginated algorithmic problem catalog with pattern filters</td>
+                  <td><code>@Operation(summary = "List Problems")</code></td>
+                </tr>
+                <tr>
+                  <td><span class="rest-badge rest-post">POST</span></td>
+                  <td><code>/api/v1/submissions</code></td>
+                  <td><span style="color: #00d2d3; font-weight: 700;">201 Created</span></td>
+                  <td>Submit code solution payload for sandboxed test case execution</td>
+                  <td><code>@ApiResponse(responseCode = "201")</code></td>
+                </tr>
+                <tr>
+                  <td><span class="rest-badge rest-put">PUT</span></td>
+                  <td><code>/api/v1/users/{id}</code></td>
+                  <td><span style="color: #fbbf24; font-weight: 700;">200 OK</span></td>
+                  <td>Idempotent full update of user profile and coding preferences</td>
+                  <td><code>@Operation(summary = "Update Profile")</code></td>
+                </tr>
+                <tr>
+                  <td><span class="rest-badge rest-delete">DELETE</span></td>
+                  <td><code>/api/v1/sessions/{token}</code></td>
+                  <td><span style="color: #ef4444; font-weight: 700;">204 No Content</span></td>
+                  <td>Revoke active authentication session and invalidate Redis token</td>
+                  <td><code>@ApiResponse(responseCode = "204")</code></td>
+                </tr>
+                <tr>
+                  <td><span class="rest-badge rest-get">GET</span></td>
+                  <td><code>/swagger-ui.html</code></td>
+                  <td><span style="color: #85ea2d; font-weight: 700;">200 OK</span></td>
+                  <td>Interactive Swagger UI dashboard for live API testing & schemas</td>
+                  <td><code>SpringDoc WebMVC UI Auto-Config</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Maven Dependency & Swagger Annotation Code Box -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <!-- Maven Dependency -->
+            <div class="code-snippet-box">
+              <span class="code-comment">&lt;!-- Maven: SpringDoc OpenAPI 3.0 & Swagger UI --&gt;</span><br/>
+              <span class="code-tag">&lt;dependency&gt;</span><br/>
+              &nbsp;&nbsp;<span class="code-tag">&lt;groupId&gt;</span>org.springdoc<span class="code-tag">&lt;/groupId&gt;</span><br/>
+              &nbsp;&nbsp;<span class="code-tag">&lt;artifactId&gt;</span>springdoc-openapi-starter-webmvc-ui<span class="code-tag">&lt;/artifactId&gt;</span><br/>
+              &nbsp;&nbsp;<span class="code-tag">&lt;version&gt;</span>2.5.0<span class="code-tag">&lt;/version&gt;</span><br/>
+              <span class="code-tag">&lt;/dependency&gt;</span>
+            </div>
+
+            <!-- Java Controller Annotation -->
+            <div class="code-snippet-box">
+              <span class="code-comment">// Controller Annotated with OpenAPI & Swagger</span><br/>
+              <span class="code-keyword">@RestController</span><br/>
+              <span class="code-keyword">@RequestMapping</span>(<span class="code-val">"/api/v1/problems"</span>)<br/>
+              <span class="code-keyword">@Tag</span>(name = <span class="code-val">"LeetCode Problems API"</span>, description = <span class="code-val">"Core DSA Problem Service"</span>)<br/>
+              <span class="code-keyword">@SecurityRequirement</span>(name = <span class="code-val">"bearerAuth"</span>)<br/>
+              <span class="code-keyword">public class</span> ProblemController {<br/>
+              &nbsp;&nbsp;<span class="code-keyword">@GetMapping</span><br/>
+              &nbsp;&nbsp;<span class="code-keyword">@Operation</span>(summary = <span class="code-val">"Fetch 100 LeetCode Solutions with Complexity"</span>)<br/>
+              &nbsp;&nbsp;<span class="code-keyword">public</span> ResponseEntity&lt;List&lt;ProblemDTO&gt;&gt; getAll() { ... }<br/>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         DIAGRAM 2: HIGH-SCALE 1M+ CQRS & DB REPLICATION
+         ========================================== -->
+    <div class="diagram-view-panel" id="tab-db-scale">
+      <div class="diagram-board">
+        <div class="diagram-board-header">
+          <div class="diagram-title-group">
+            <h3>1,000,000+ Daily Requests: CQRS & Database Replication Pipeline</h3>
+            <p>Separation of read and write workloads with asynchronous binary log replication and multi-tier edge caching.</p>
+          </div>
+          <div class="diagram-spec-badges">
+            <span class="spec-badge">Pattern: CQRS & Cache-Aside</span>
+            <span class="spec-badge">Replication Lag: &lt; 40ms</span>
+            <span class="spec-badge">Scale: 1M+ Requests/Day</span>
+          </div>
+        </div>
+
+        <div class="flow-canvas">
+          <!-- Edge Layer -->
+          <div class="flow-row">
+            <div class="flow-node-card" style="max-width: 500px; width: 100%;">
+              <div class="node-header">
+                <span class="node-badge badge-green">Edge Tier</span>
+                <span style="font-size: 0.75rem; color: #10b981;">300+ Global Locations</span>
+              </div>
+              <h4 class="node-title"><span>🌐</span> AWS CloudFront Edge CDN + Anycast DNS</h4>
+              <p class="node-desc">Fulfills 98.7% of all inbound static traffic directly at the edge with HTTP/3 and Brotli compression. Uncached API requests are routed securely over AWS backbone networks.</p>
+              <div class="node-specs">
+                <div class="node-spec-item">Edge Cache Hit Ratio: <span class="spec-val">98.7%</span></div>
+                <div class="node-spec-item">Edge TTFB: <span class="spec-val">&lt; 18ms</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-connector-vertical">
+            <span style="color: var(--text-muted); font-size: 0.75rem;">Origin Pull & Dynamic API Requests</span>
+            <div class="connector-line"></div>
+            <div class="connector-arrow">▼</div>
+          </div>
+
+          <!-- Application Tier -->
+          <div class="flow-row">
+            <div class="flow-node-card highlight-gateway" style="max-width: 500px; width: 100%;">
+              <div class="node-header">
+                <span class="node-badge badge-purple">Compute Tier</span>
+                <span style="font-size: 0.75rem; color: #a29bfe;">Auto-Scaled Docker</span>
+              </div>
+              <h4 class="node-title"><span>📦</span> AWS ECS Fargate Cluster (Spring Boot 3)</h4>
+              <p class="node-desc">Stateless container tasks behind an AWS Application Load Balancer (ALB). Handles requests asynchronously without blocking threads, routing writes to Master and reads to Cache/Replicas.</p>
+              <div class="node-specs">
+                <div class="node-spec-item">Auto-Scale Metric: <span class="spec-val">Target CPU 70% / Request Count</span></div>
+                <div class="node-spec-item">Routing Strategy: <span class="spec-val">Read-Write Split Router</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-connector-vertical">
+            <span style="color: var(--text-muted); font-size: 0.75rem;">Split Workload Execution</span>
+            <div class="connector-line"></div>
+            <div class="connector-arrow">▼</div>
+          </div>
+
+          <!-- Database Read/Write Split Tier -->
+          <div class="flow-row">
+            <!-- Write Path -->
+            <div class="flow-node-card highlight-eureka">
+              <div class="node-header">
+                <span class="node-badge badge-gold">Write Master</span>
+                <span style="font-size: 0.72rem; color: #fbbf24;">ACID Transactions</span>
+              </div>
+              <h4 class="node-title"><span>✏️</span> Master MySQL DB (Primary)</h4>
+              <p class="node-desc">Exclusively processes INSERT, UPDATE, and DELETE queries. Guarantees ACID durability with Write-Ahead Logging (WAL) and row-level locking.</p>
+              <div class="node-specs">
+                <div class="node-spec-item">Workload: <span class="spec-val">Mutations Only (15% Traffic)</span></div>
+                <div class="node-spec-item">Log Streaming: <span class="spec-val">Binary Log (binlog) Enabled</span></div>
+              </div>
+            </div>
+
+            <!-- Binlog Streaming Arrow -->
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px;">
+              <span style="font-size: 0.75rem; font-family: 'Fira Code', monospace; color: var(--accent-rose); font-weight: 700;">binlog sync</span>
+              <div style="font-size: 1.8rem; color: var(--accent-rose);">➔</div>
+              <span style="font-size: 0.7rem; color: var(--text-muted);">&lt; 40ms lag</span>
+            </div>
+
+            <!-- Read Path: Replica Slaves -->
+            <div class="flow-node-card highlight-db">
+              <div class="node-header">
+                <span class="node-badge badge-cyan">Read Replicas</span>
+                <span style="font-size: 0.75rem; color: #00d2d3;">Multi-AZ Slaves</span>
+              </div>
+              <h4 class="node-title"><span>📖</span> Read Replicas (Slave Nodes)</h4>
+              <p class="node-desc">Horizontal pool of read-only databases serving heavy SELECT queries, user dashboards, and LeetCode search queries without placing lock contention on the master.</p>
+              <div class="node-specs">
+                <div class="node-spec-item">Workload: <span class="spec-val">Queries Only (85% Traffic)</span></div>
+                <div class="node-spec-item">Optimization: <span class="spec-val">Composite Covering B-Tree Indexes</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         DIAGRAM 3: EUREKA HEARTBEAT & LEASE PROTOCOL
+         ========================================== -->
+    <div class="diagram-view-panel" id="tab-heartbeat-protocol">
+      <div class="diagram-board">
+        <div class="diagram-board-header">
+          <div class="diagram-title-group">
+            <h3>Netflix Eureka Heartbeat & Lease Lifecycle Sequence</h3>
+            <p>Chronological handshake protocol illustrating instance registration, heartbeat renewals, client delta caching, and automated eviction.</p>
+          </div>
+          <div class="diagram-spec-badges">
+            <span class="spec-badge">Protocol: Eureka REST API</span>
+            <span class="spec-badge">Lease Duration: 90 Seconds</span>
+            <span class="spec-badge">Heartbeat Interval: 30 Seconds</span>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 10px;">
+          <!-- Step 1 -->
+          <div style="display: flex; gap: 16px; align-items: flex-start; padding: 18px; background: rgba(18, 19, 29, 0.7); border: 1px solid var(--glass-border-subtle); border-radius: var(--radius-md);">
+            <div style="width: 38px; height: 38px; border-radius: 50%; background: rgba(16, 185, 129, 0.2); border: 1px solid #10b981; color: #10b981; display: flex; align-items: center; justify-content: center; font-weight: 800; font-family: 'Fira Code', monospace; flex-shrink: 0;">1</div>
+            <div>
+              <div style="font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 700; color: #fff;">Instance Registration (At Service Boot)</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">
+                Microservice initializes and sends <code style="color: var(--accent-rose); font-family: 'Fira Code', monospace;">POST /eureka/apps/{appName}</code> carrying host IP, port, metadata, and status check URL (<code style="color: #10b981;">/actuator/health</code>). Eureka adds instance to the read-write registry cache.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div style="display: flex; gap: 16px; align-items: flex-start; padding: 18px; background: rgba(18, 19, 29, 0.7); border: 1px solid var(--glass-border-subtle); border-radius: var(--radius-md);">
+            <div style="width: 38px; height: 38px; border-radius: 50%; background: rgba(245, 158, 11, 0.2); border: 1px solid #fbbf24; color: #fbbf24; display: flex; align-items: center; justify-content: center; font-weight: 800; font-family: 'Fira Code', monospace; flex-shrink: 0;">2</div>
+            <div>
+              <div style="font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 700; color: #fff;">30-Second Heartbeat Lease Renewal</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">
+                Every 30 seconds, the microservice dispatches <code style="color: var(--accent-rose); font-family: 'Fira Code', monospace;">PUT /eureka/apps/{appName}/{instanceId}</code>. Eureka refreshes the 90-second expiration lease timestamp, confirming node viability.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div style="display: flex; gap: 16px; align-items: flex-start; padding: 18px; background: rgba(18, 19, 29, 0.7); border: 1px solid var(--glass-border-subtle); border-radius: var(--radius-md);">
+            <div style="width: 38px; height: 38px; border-radius: 50%; background: rgba(108, 92, 231, 0.2); border: 1px solid #a29bfe; color: #a29bfe; display: flex; align-items: center; justify-content: center; font-weight: 800; font-family: 'Fira Code', monospace; flex-shrink: 0;">3</div>
+            <div>
+              <div style="font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 700; color: #fff;">Client-Side Delta Registry Synchronization</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">
+                Microservices fetch incremental registry updates via <code style="color: var(--accent-rose); font-family: 'Fira Code', monospace;">GET /eureka/apps/delta</code> every 30 seconds and cache it locally. Downstream RPC calls query the local memory cache directly, requiring zero network hops to Eureka for routing decisions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div style="display: flex; gap: 16px; align-items: flex-start; padding: 18px; background: rgba(18, 19, 29, 0.7); border: 1px solid var(--glass-border-subtle); border-radius: var(--radius-md);">
+            <div style="width: 38px; height: 38px; border-radius: 50%; background: rgba(234, 0, 94, 0.2); border: 1px solid var(--make-magenta); color: var(--accent-rose); display: flex; align-items: center; justify-content: center; font-weight: 800; font-family: 'Fira Code', monospace; flex-shrink: 0;">4</div>
+            <div>
+              <div style="font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 700; color: #fff;">Fault Eviction vs. Self-Preservation Mode</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">
+                If Eureka misses 3 consecutive heartbeats (90 seconds) from an instance, the background eviction task removes it from the routing table. However, if renewal counts fall below 85% cluster-wide due to network jitter, Eureka activates <strong>Self-Preservation Mode</strong> to protect healthy instances from false deregistration.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🧪 INTERACTIVE API EXPLORER & SWAGGER LIVE SANDBOX -->
+  <section class="section-container" id="api-explorer">
+    <div class="section-header">
+      <div class="section-tag">
+        <span>🧪</span> <span>Live API Testing</span>
+      </div>
+      <h2 class="section-title">
+        Interactive <span class="gradient-text">API & Swagger Sandbox</span>
+      </h2>
+      <p class="section-subtitle">
+        Trigger live microservice endpoints directly from your browser. Inspect real-time response payloads, HTTP status codes, and execution latency.
+      </p>
+    </div>
+
+    <div class="api-explorer-card">
+      <div class="api-explorer-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span style="font-size: 1.2rem;">⚡</span>
+          <div>
+            <div style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.1rem; color: #fff;">Ahmad Shuaib API Gateway Sandbox</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted); font-family: 'Fira Code', monospace;">OpenAPI 3.0 • springdoc-openapi v2.5.0</div>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="swagger-pill">Swagger UI Ready</span>
+          <span class="spec-badge">JWT Bearer Auth</span>
+        </div>
+      </div>
+
+      <!-- Endpoint Selector Pills -->
+      <div class="api-endpoints-nav">
+        <button class="api-endpoint-pill active" data-endpoint="problems">
+          <span class="rest-badge rest-get">GET</span> <span>/api/v1/problems</span>
+        </button>
+        <button class="api-endpoint-pill" data-endpoint="health">
+          <span class="rest-badge rest-get">GET</span> <span>/actuator/health</span>
+        </button>
+        <button class="api-endpoint-pill" data-endpoint="execute">
+          <span class="rest-badge rest-post">POST</span> <span>/api/v1/dsa/execute</span>
+        </button>
+        <button class="api-endpoint-pill" data-endpoint="eureka">
+          <span class="rest-badge rest-get">GET</span> <span>/eureka/apps</span>
+        </button>
+        <button class="api-endpoint-pill" data-endpoint="stats">
+          <span class="rest-badge rest-get">GET</span> <span>/api/stats</span>
+        </button>
+      </div>
+
+      <!-- Sandbox Body -->
+      <div class="api-playground-body">
+        <!-- Left: Request Configuration -->
+        <div class="api-request-box">
+          <div class="api-box-title">
+            <span>HTTP Request Specifications</span>
+            <span style="font-size: 0.72rem; color: var(--text-muted); font-family: 'Fira Code', monospace;">HTTP/1.1 TLSv1.3</span>
+          </div>
+
+          <div class="api-url-bar">
+            <span class="rest-badge rest-get" id="apiMethodBadge">GET</span>
+            <span id="apiUrlDisplay" style="color: #fff; word-break: break-all;">/api/v1/problems?page=1&size=3&category=SLIDING_WINDOW</span>
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <label style="font-size: 0.78rem; font-family: 'Fira Code', monospace; color: var(--text-muted); display: block; margin-bottom: 4px;">Headers:</label>
+            <div style="background: #06070a; padding: 10px; border-radius: var(--radius-sm); font-size: 0.75rem; font-family: 'Fira Code', monospace; color: #a29bfe; line-height: 1.5;">
+              Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...<br/>
+              Accept: application/json<br/>
+              X-Client-Id: shuaib-portfolio-gateway
+            </div>
+          </div>
+
+          <div>
+            <label for="apiRequestBody" style="font-size: 0.78rem; font-family: 'Fira Code', monospace; color: var(--text-muted); display: block; margin-bottom: 4px;">JSON Payload (for POST/PUT):</label>
+            <textarea id="apiRequestBody" readonly style="width: 100%; height: 95px; background: #06070a; border: 1px solid rgba(255, 255, 255, 0.05); border-radius: var(--radius-sm); color: #00d2d3; font-family: 'Fira Code', monospace; font-size: 0.75rem; padding: 8px; resize: none;"></textarea>
+          </div>
+
+          <button class="btn-send-api" id="apiSendBtn">
+            <span>🚀</span> <span>Execute Request</span>
+          </button>
+        </div>
+
+        <!-- Right: Live Response Viewer -->
+        <div class="api-response-box">
+          <div class="api-box-title">
+            <span>Live Response Output</span>
+            <div style="display: flex; gap: 8px;">
+              <span id="apiStatusBadge" style="font-family: 'Fira Code', monospace; font-size: 0.75rem; color: #10b981; font-weight: 700;">Ready</span>
+              <span id="apiLatencyBadge" style="font-family: 'Fira Code', monospace; font-size: 0.75rem; color: var(--text-muted);">-- ms</span>
+            </div>
+          </div>
+
+          <div class="api-response-viewer" id="apiResponseViewer">// Select an endpoint and click "Execute Request" to test live backend transmission...
+{
+  "notice": "All endpoints simulate microservice routing through Spring Cloud Gateway with real JSON schemas."
+}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🏆 LEETCODE & COMPETITIVE PROGRAMMING SECTION -->
+  <section class="section-container leetcode-section" id="leetcode">
+    <div class="section-header">
+      <div class="section-tag">
+        <span>⚔️</span> <span>Algorithmic Combat</span>
+      </div>
+      <h2 class="section-title">
+        LeetCode & <span class="gradient-text">Problem Solving Dojo</span>
+      </h2>
+      <p class="section-subtitle">
+        Deep understanding of algorithmic complexity, data structures, and edge-case optimization across Java, C++, and Python.
+      </p>
+    </div>
+
+    <div class="lc-stats-grid">
+      <!-- Main Stat Card -->
+      <div class="lc-card-main">
+        <div class="lc-header">
+          <div class="lc-user-info">
+            <img src="assets/img/shuaib-profile.jpg" alt="Ahmad Shuaib (x_drxzx_x)" class="lc-avatar" onerror="this.src='https://assets.leetcode.com/users/x_drxzx_x/avatar_1792938239.png';" />
+            <div>
+              <div class="lc-username">x_drxzx_x</div>
+              <div class="lc-ranking">Global Rank: #273,952</div>
+            </div>
+          </div>
+          <div class="lc-rank-badge">Top ~8% Global</div>
+        </div>
+
+        <div class="lc-big-stat">
+          <div class="lc-total-num counter-anim" data-target="445">445</div>
+          <div class="lc-total-label">Problems Solved Successfully</div>
+        </div>
+
+        <div class="lc-breakdown-list">
+          <!-- Easy -->
+          <div class="lc-bar-item">
+            <div class="lc-bar-header">
+              <span class="lc-diff-easy">Easy</span>
+              <span class="lc-diff-easy">125 Solved</span>
+            </div>
+            <div class="lc-progress-track">
+              <div class="lc-progress-fill fill-easy" data-percentage="75" style="width: 0%;"></div>
+            </div>
+          </div>
+
+          <!-- Medium -->
+          <div class="lc-bar-item">
+            <div class="lc-bar-header">
+              <span class="lc-diff-med">Medium (Primary Focus)</span>
+              <span class="lc-diff-med">232 Solved</span>
+            </div>
+            <div class="lc-progress-track">
+              <div class="lc-progress-fill fill-med" data-percentage="88" style="width: 0%;"></div>
+            </div>
+          </div>
+
+          <!-- Hard -->
+          <div class="lc-bar-item">
+            <div class="lc-bar-header">
+              <span class="lc-diff-hard">Hard (Advanced DSA)</span>
+              <span class="lc-diff-hard">88 Solved</span>
+            </div>
+            <div class="lc-progress-track">
+              <div class="lc-progress-fill fill-hard" data-percentage="65" style="width: 0%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 28px; display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="https://leetcode.com/u/x_drxzx_x/" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 10px 22px; font-size: 0.88rem;">
+            <span>⚡</span> <span>Visit LeetCode Profile</span>
+          </a>
+          <a href="https://leetcode-patterns-platform-jqfj.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 10px 22px; font-size: 0.88rem;">
+            <span>🚀</span> <span>Launch Patterns Platform</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Highlights Side Grid -->
+      <div class="lc-highlights-grid">
+        <div class="lc-highlight-box">
+          <div class="hl-icon">⚡</div>
+          <div class="hl-num counter-anim" data-target="200">200</div>
+          <div class="hl-title">Day Active Storm</div>
+          <div class="hl-desc">Continuous problem-solving consistency on LeetCode without breaks.</div>
+        </div>
+
+        <div class="lc-highlight-box">
+          <div class="hl-icon">🏯</div>
+          <div class="hl-num">100+</div>
+          <div class="hl-title">GFG Dojo Elite</div>
+          <div class="hl-desc">Problems conquered on GeeksforGeeks covering complex DSA patterns.</div>
+        </div>
+
+        <div class="lc-highlight-box">
+          <div class="hl-icon">🗄️</div>
+          <div class="hl-num">100+</div>
+          <div class="hl-title">MySQL Trials</div>
+          <div class="hl-desc">Advanced relational database queries, indexing, subqueries, and joins.</div>
+        </div>
+
+        <div class="lc-highlight-box">
+          <div class="hl-icon">🗡️</div>
+          <div class="hl-num">10</div>
+          <div class="hl-title">Mastered DSA Patterns</div>
+          <div class="hl-desc">Sliding Window, Two Pointers, Fast & Slow, Monotonic Stack, Backtracking.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💻 FEATURED PROJECTS SECTION -->
+  <section class="section-container" id="projects">
+    <div class="section-header">
+      <div class="section-tag">
+        <span>🚀</span> <span>Portfolio Showcase</span>
+      </div>
+      <h2 class="section-title">
+        Featured <span class="gradient-text">Engineering Projects</span>
+      </h2>
+      <p class="section-subtitle">
+        Real-world applications built with Java, AI models, modern web technologies, and declarative infrastructure.
+      </p>
+    </div>
+
+    <!-- Category Filter Bar -->
+    <div class="projects-filter-bar">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="backend">Backend & Java</button>
+      <button class="filter-btn" data-filter="ai">AI & Automation</button>
+      <button class="filter-btn" data-filter="systems">Systems & Infra</button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+      <!-- 1. LeetCode Patterns Platform -->
+      <div class="project-card" data-category="backend systems">
+        <div>
+          <div class="proj-top">
+            <div class="proj-icon-wrapper">🧩</div>
+            <div class="proj-links">
+              <a href="https://github.com/drxzx7/leetcode-patterns-platform" target="_blank" rel="noopener noreferrer" class="proj-icon-link" title="Source Code">🐙</a>
+              <a href="https://leetcode-patterns-platform-jqfj.vercel.app/" target="_blank" rel="noopener noreferrer" class="proj-icon-link" title="Live Application">↗</a>
+            </div>
+          </div>
+          <h3 class="proj-title">LeetCode Patterns Platform</h3>
+          <p class="proj-desc">
+            An interactive DSA learning engine featuring 10 foundational patterns, 100 optimal solutions, live visualizers, and step-by-step algorithms across C++, Java, Python, and JavaScript.
+          </p>
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag">JavaScript</span>
+          <span class="proj-tag">Make.com UI</span>
+          <span class="proj-tag">Algorithms</span>
+          <span class="proj-tag">Vercel</span>
+        </div>
+      </div>
+
+      <!-- 2. Ai-Companion-Argos -->
+      <div class="project-card" data-category="backend ai">
+        <div>
+          <div class="proj-top">
+            <div class="proj-icon-wrapper">🤖</div>
+            <div class="proj-links">
+              <a href="https://github.com/drxzx7/Ai-Companion-Argos" target="_blank" rel="noopener noreferrer" class="proj-icon-link" title="Source Code">🐙</a>
+            </div>
+          </div>
+          <h3 class="proj-title">AI Companion Argos</h3>
+          <p class="proj-desc">
+            An intelligent companion application backed by Java architecture. Implements asynchronous event pipelines, contextual memory persistence, and low-latency interaction handling.
+          </p>
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag">Java</span>
+          <span class="proj-tag">Backend Services</span>
+          <span class="proj-tag">AI Integration</span>
+          <span class="proj-tag">Multithreading</span>
+        </div>
+      </div>
+
+      <!-- 3. Ai-Projects-for-Hackathons -->
+      <div class="project-card" data-category="ai">
+        <div>
+          <div class="proj-top">
+            <div class="proj-icon-wrapper">⚡</div>
+            <div class="proj-links">
+              <a href="https://github.com/drxzx7/Ai-Projects-for-Hackathons" target="_blank" rel="noopener noreferrer" class="proj-icon-link" title="Source Code">🐙</a>
+            </div>
+          </div>
+          <h3 class="proj-title">50 AI Hackathon Demos</h3>
+          <p class="proj-desc">
+            Tired of heavy Python dependency bloat? 50 working, production-ready AI demos implemented purely in JavaScript and Java—ranging from fake news classifiers to intelligent conversational bots.
+          </p>
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag">Pure JavaScript</span>
+          <span class="proj-tag">Java</span>
+          <span class="proj-tag">Zero Python Bloat</span>
+          <span class="proj-tag">Hackathon Ready</span>
+        </div>
+      </div>
+
+      <!-- 4. Eternity-AI -->
+      <div class="project-card" data-category="ai systems">
+        <div>
+          <div class="proj-top">
+            <div class="proj-icon-wrapper">📈</div>
+            <div class="proj-links">
+              <a href="https://github.com/drxzx7/Eternity-AI" target="_blank" rel="noopener noreferrer" class="proj-icon-link" title="Source Code">🐙</a>
+            </div>
+          </div>
+          <h3 class="proj-title">Eternity AI Market Predictor</h3>
+          <p class="proj-desc">
+            Algorithmic stock market analysis tool that computes price velocity and predictive timing indicators to identify ideal market entry and exit intervals.
+          </p>
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag">Predictive AI</span>
+          <span class="proj-tag">Trading Logic</span>
+          <span class="proj-tag">Market Data</span>
+        </div>
+      </div>
+
+      <!-- 5. JARVIS-Voice-Assistant -->
+      <div class="project-card" data-category="ai">
+        <div>
+          <div class="proj-top">
+            <div class="proj-icon-wrapper">🎙️</div>
+            <div class="proj-links">
+              <a href="https://github.com/drxzx7/JARVIS-Voice-Assistant" target="_blank" rel="noopener noreferrer" class="proj-icon-link" title="Source Code">🐙</a>
+            </div>
+          </div>
+          <h3 class="proj-title">JARVIS Voice Assistant</h3>
+          <p class="proj-desc">
+            A desktop assistant crafted with a sleek PyQt6 interface, natural speech processing, and Gemini AI integration for multi-modal reasoning and automated system task execution.
+          </p>
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">PyQt6</span>
+          <span class="proj-tag">Gemini AI</span>
+          <span class="proj-tag">Voice UI</span>
+        </div>
+      </div>
+
+      <!-- 6. Job-Hunt 1.0 -->
+      <div class="project-card" data-category="ai systems">
+        <div>
+          <div class="proj-top">
+            <div class="proj-icon-wrapper">💼</div>
+            <div class="proj-links">
+              <a href="https://github.com/drxzx7/job-hunt-1.0" target="_blank" rel="noopener noreferrer" class="proj-icon-link" title="Source Code">🐙</a>
+            </div>
+          </div>
+          <h3 class="proj-title">Job Hunt 1.0 Agent</h3>
+          <p class="proj-desc">
+            Autonomous job application framework running on your local machine powered by Claude Code. Evaluates postings, customizes CVs, synthesizes cover letters, and simulates interview prep.
+          </p>
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag">Claude Code</span>
+          <span class="proj-tag">AI Workflows</span>
+          <span class="proj-tag">Automation</span>
+        </div>
+      </div>
+
+      <!-- 7. n8n Automation Workflows -->
+      <div class="project-card" data-category="systems ai">
+        <div>
+          <div class="proj-top">
+            <div class="proj-icon-wrapper">🔄</div>
+            <div class="proj-links">
+              <a href="https://github.com/drxzx7/n8n-automation-projects" target="_blank" rel="noopener noreferrer" class="proj-icon-link" title="Source Code">🐙</a>
+            </div>
+          </div>
+          <h3 class="proj-title">n8n Production Workflows</h3>
+          <p class="proj-desc">
+            10 production-ready event-driven automation workflows: Airtable to Slack synchronizers, Telegram AI bot engines, lead enrichment pipelines, and OCR document processors.
+          </p>
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag">n8n</span>
+          <span class="proj-tag">Webhooks</span>
+          <span class="proj-tag">Event-Driven</span>
+          <span class="proj-tag">Slack & Telegram</span>
+        </div>
+      </div>
+
+      <!-- 8. Terraform Cloud Infrastructure -->
+      <div class="project-card" data-category="systems">
+        <div>
+          <div class="proj-top">
+            <div class="proj-icon-wrapper">🏗️</div>
+            <div class="proj-links">
+              <a href="https://github.com/drxzx7/terraform" target="_blank" rel="noopener noreferrer" class="proj-icon-link" title="Source Code">🐙</a>
+            </div>
+          </div>
+          <h3 class="proj-title">Terraform IaC & Microservices</h3>
+          <p class="proj-desc">
+            Declarative infrastructure configurations codified as repeatable templates. Safely orchestrates cloud resources, access controls, network topologies, and microservice definitions.
+          </p>
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag">Terraform</span>
+          <span class="proj-tag">IaC</span>
+          <span class="proj-tag">DevOps</span>
+          <span class="proj-tag">Cloud Architecture</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🛠️ TECH STACK MATRIX SECTION -->
+  <section class="section-container" id="skills">
+    <div class="section-header">
+      <div class="section-tag">
+        <span>🛠️</span> <span>Engineering Arsenal</span>
+      </div>
+      <h2 class="section-title">
+        Technologies & <span class="gradient-text">Proficiencies</span>
+      </h2>
+      <p class="section-subtitle">
+        Curated stack of languages, frameworks, and system components used to engineer robust, fault-tolerant solutions.
+      </p>
+    </div>
+
+    <div class="skills-matrix">
+      <!-- Backend & Core Languages -->
+      <div class="skill-category-card">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">☕</span>
+          <h3 class="skill-cat-title">Backend & Microservices</h3>
+        </div>
+        <div class="skills-pill-group">
+          <span class="skill-pill"><span>☕</span> Java (Core / Concurrency)</span>
+          <span class="skill-pill"><span>🍃</span> Spring Boot 3</span>
+          <span class="skill-pill"><span>🚪</span> Spring Cloud Gateway</span>
+          <span class="skill-pill"><span>📡</span> Netflix Eureka Discovery</span>
+          <span class="skill-pill"><span>⚡</span> JDBC & HikariCP</span>
+          <span class="skill-pill"><span>📜</span> REST APIs & Swagger UI</span>
+          <span class="skill-pill"><span>🛡️</span> Resilience4j Circuit Breaker</span>
+          <span class="skill-pill"><span>📦</span> Spring Data JPA / Hibernate</span>
+          <span class="skill-pill"><span>⚡</span> C++ (STL / DSA)</span>
+          <span class="skill-pill"><span>🐍</span> Python (AI / FastAPI)</span>
+          <span class="skill-pill"><span>🐘</span> PHP (Secure REST APIs)</span>
+          <span class="skill-pill"><span>🟢</span> Node.js / Express</span>
+        </div>
+      </div>
+
+      <!-- Data Structures & Algorithms -->
+      <div class="skill-category-card">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">⚔️</span>
+          <h3 class="skill-cat-title">DSA & Problem Solving</h3>
+        </div>
+        <div class="skills-pill-group">
+          <span class="skill-pill"><span>🌲</span> Trees & Binary Search Trees</span>
+          <span class="skill-pill"><span>🕸️</span> Graph Theory (BFS/DFS/Dijkstra)</span>
+          <span class="skill-pill"><span>🧩</span> Dynamic Programming</span>
+          <span class="skill-pill"><span>🪟</span> Sliding Window & Two Pointers</span>
+          <span class="skill-pill"><span>🥞</span> Monotonic Queue & Stack</span>
+          <span class="skill-pill"><span>🔄</span> Backtracking & Recursion</span>
+        </div>
+      </div>
+
+      <!-- Databases & Storage -->
+      <div class="skill-category-card">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">🗄️</span>
+          <h3 class="skill-cat-title">Databases & Storage</h3>
+        </div>
+        <div class="skills-pill-group">
+          <span class="skill-pill"><span>🐬</span> MySQL (100+ Complex Queries)</span>
+          <span class="skill-pill"><span>🔌</span> JDBC PreparedStatement & Transactions</span>
+          <span class="skill-pill"><span>⚡</span> HikariCP Connection Pool</span>
+          <span class="skill-pill"><span>🐘</span> PostgreSQL</span>
+          <span class="skill-pill"><span>⚡</span> Redis In-Memory Cache (ZSET)</span>
+          <span class="skill-pill"><span>📁</span> SQLite</span>
+          <span class="skill-pill"><span>🔒</span> ACID Transactions & B-Tree Indexing</span>
+        </div>
+      </div>
+
+      <!-- AI, DevOps & Cloud Tools -->
+      <div class="skill-category-card">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">☁️</span>
+          <h3 class="skill-cat-title">AWS Cloud, DevOps & AI</h3>
+        </div>
+        <div class="skills-pill-group">
+          <span class="skill-pill"><span>☁️</span> AWS (ECS Fargate / RDS / S3)</span>
+          <span class="skill-pill"><span>🌐</span> AWS CloudFront & Route 53</span>
+          <span class="skill-pill"><span>🏗️</span> Terraform (IaC)</span>
+          <span class="skill-pill"><span>🐳</span> Docker Containers</span>
+          <span class="skill-pill"><span>🐙</span> Git & GitHub Actions CI/CD</span>
+          <span class="skill-pill"><span>🤖</span> Gemini AI API</span>
+          <span class="skill-pill"><span>🧠</span> Claude Code Automation</span>
+          <span class="skill-pill"><span>🔄</span> n8n Workflow Automation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💻 INTERACTIVE DEVELOPER TERMINAL -->
+  <section class="section-container" id="terminal">
+    <div class="section-header">
+      <div class="section-tag">
+        <span>⌨️</span> <span>Interactive Shell</span>
+      </div>
+      <h2 class="section-title">
+        Developer <span class="gradient-text">Console Sandbox</span>
+      </h2>
+      <p class="section-subtitle">
+        Execute real-time commands to query portfolio metrics, inspect system design specs, or explore background logs.
+      </p>
+    </div>
+
+    <div class="terminal-card">
+      <div class="terminal-header">
+        <div class="terminal-dots">
+          <div class="tdot tdot-red"></div>
+          <div class="tdot tdot-yellow"></div>
+          <div class="tdot tdot-green"></div>
+        </div>
+        <div class="terminal-title">bash — drxzx7@shuaib-portfolio: ~</div>
+        <div style="font-size: 0.75rem; color: var(--text-muted); font-family: 'Fira Code', monospace;">v2.0.0-PROD</div>
+      </div>
+
+      <div class="terminal-body" id="terminalBody">
+        <div class="term-line">
+          <span class="term-prompt">drxzx7@shuaib:~$</span> <span class="term-cmd">whoami</span>
+        </div>
+        <div class="term-line term-output">Ahmad Shuaib — Backend Engineer & AI Developer (Chennai, India)
+LeetCode: 445+ Solved (Top ~8%) | GitHub: @drxzx7 | Stack: Java 17/21, Spring Boot 3, JDBC, REST/Swagger, Eureka, AWS</div>
+        <div class="term-line" style="margin-top: 10px;">
+          <span class="term-prompt">drxzx7@shuaib:~$</span> <span class="term-cmd">help</span>
+        </div>
+        <div class="term-line term-output">Type any of the following commands or click the shortcut buttons below:
+  • about        • skills       • jdbc         • rest
+  • swagger      • gateway      • microservices• architecture
+  • projects     • leetcode     • contact      • clear</div>
+      </div>
+
+      <!-- Quick Action Shortcuts -->
+      <div class="term-shortcuts">
+        <span style="font-size: 0.72rem; color: var(--text-muted); margin-right: 6px;">QUICK COMMANDS:</span>
+        <button class="term-pill-btn" data-cmd="skills">skills</button>
+        <button class="term-pill-btn" data-cmd="jdbc">jdbc</button>
+        <button class="term-pill-btn" data-cmd="rest">rest</button>
+        <button class="term-pill-btn" data-cmd="swagger">swagger</button>
+        <button class="term-pill-btn" data-cmd="gateway">gateway</button>
+        <button class="term-pill-btn" data-cmd="microservices">microservices</button>
+        <button class="term-pill-btn" data-cmd="architecture">architecture</button>
+        <button class="term-pill-btn" data-cmd="projects">projects</button>
+        <button class="term-pill-btn" data-cmd="leetcode">leetcode</button>
+        <button class="term-pill-btn" data-cmd="contact">contact</button>
+        <button class="term-pill-btn" data-cmd="clear">clear</button>
+      </div>
+
+      <!-- Command Input Line -->
+      <div style="padding: 12px 20px; background: #0c0d15; display: flex; align-items: center; border-top: 1px solid rgba(234, 0, 94, 0.2);">
+        <span class="term-prompt">drxzx7@shuaib:~$</span>
+        <input type="text" class="term-input" id="terminalInput" placeholder="Type command here and press Enter (e.g. 'jdbc')" autocomplete="off" spellcheck="false" />
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔒 SECURE CONTACT SECTION -->
+  <section class="section-container" id="contact">
+    <div class="section-header">
+      <div class="section-tag">
+        <span>💬</span> <span>Direct Transmission</span>
+      </div>
+      <h2 class="section-title">
+        Initiate <span class="gradient-text">Contact</span>
+      </h2>
+      <p class="section-subtitle">
+        Have a project idea, developer duel, internship opportunity, or backend discussion? Send an encrypted, rate-limited message below.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Contact Info Card -->
+      <div class="contact-info-card">
+        <h3 class="contact-info-title">Let's Build Scalable Systems Together</h3>
+        <p class="contact-info-desc">
+          I am actively seeking backend engineering roles, AI developer opportunities, and high-impact software projects where performance, scalability, and code hygiene are paramount.
+        </p>
+
+        <div class="contact-details-list">
+          <!-- Primary Direct Gmail Card -->
+          <div class="contact-item" style="background: rgba(234, 0, 94, 0.08); border: 1px solid rgba(234, 0, 94, 0.35); border-radius: var(--radius-md); padding: 14px;">
+            <div class="contact-icon-box" style="background: var(--grad-pink-primary); color: #fff;">✉️</div>
+            <div style="flex: 1;">
+              <div class="contact-item-title" style="color: var(--accent-rose); font-weight: 700; text-transform: uppercase; font-size: 0.74rem;">Direct Gmail Inbox</div>
+              <a href="mailto:mssdkkl@gmail.com" class="contact-item-val" style="color: #fff; font-weight: 700; font-size: 1rem; display: block; margin-bottom: 8px;">mssdkkl@gmail.com</a>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mssdkkl@gmail.com&su=Backend+Opportunity+-+Ahmad+Shuaib" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.74rem; font-weight: 700; padding: 5px 12px; background: rgba(234, 0, 94, 0.25); border: 1px solid var(--make-magenta); border-radius: var(--radius-full); color: #fff; text-decoration: none; transition: all 0.2s ease;">
+                  <span>📬</span> <span>Compose in Gmail</span>
+                </a>
+                <a href="mailto:mssdkkl@gmail.com" style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.74rem; font-weight: 600; padding: 5px 12px; background: rgba(255, 255, 255, 0.06); border: 1px solid var(--glass-border-subtle); border-radius: var(--radius-full); color: var(--text-secondary); text-decoration: none;">
+                  <span>💻</span> <span>Open Mail Client</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-box">📍</div>
+            <div>
+              <div class="contact-item-title">Location</div>
+              <div class="contact-item-val">Chennai, Tamil Nadu, India</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-box">⚡</div>
+            <div>
+              <div class="contact-item-title">LeetCode</div>
+              <a href="https://leetcode.com/u/x_drxzx_x/" target="_blank" rel="noopener noreferrer" class="contact-item-val">leetcode.com/u/x_drxzx_x</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-box">🐙</div>
+            <div>
+              <div class="contact-item-title">GitHub</div>
+              <a href="https://github.com/drxzx7" target="_blank" rel="noopener noreferrer" class="contact-item-val">github.com/drxzx7</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-box">💼</div>
+            <div>
+              <div class="contact-item-title">LinkedIn</div>
+              <a href="https://www.linkedin.com/in/ahmad-shuaib-75543037a" target="_blank" rel="noopener noreferrer" class="contact-item-val">linkedin.com/in/ahmad-shuaib-75543037a</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Security Shield Box -->
+        <div class="security-notice-box">
+          <div class="sec-icon">🛡️</div>
+          <div>
+            <div class="sec-title">Enterprise Security Protocols Active</div>
+            <div class="sec-desc">
+              Submissions are filtered through anti-DDoS sliding-window rate limiters, honeypot bot traps, strict UTF-8 input sanitizers, and atomic file lock persistence targeting <strong>mssdkkl@gmail.com</strong>.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-card">
+        <!-- Direct Destination Notice -->
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 16px; padding: 10px 14px; background: rgba(234, 0, 94, 0.08); border: 1px dashed rgba(234, 0, 94, 0.35); border-radius: var(--radius-sm); font-size: 0.8rem; color: #fff; font-family: 'Fira Code', monospace; flex-wrap: wrap;">
+          <div><span>📬</span> <span>Recipient: <strong style="color: var(--accent-rose);">mssdkkl@gmail.com</strong></span></div>
+          <span style="font-size: 0.72rem; color: #10b981; font-weight: 700;">● Active Route</span>
+        </div>
+
+        <form id="contactForm" novalidate>
+          <!-- Hidden Anti-Bot Honeypot Field -->
+          <input type="text" name="website_hp" id="formHoneypot" class="hp-field" tabindex="-1" autocomplete="off" />
+          <input type="hidden" name="_ts" id="formTimestamp" value="" />
+
+          <div class="form-group">
+            <label for="formName" class="form-label">Your Name</label>
+            <input type="text" id="formName" class="form-input" placeholder="e.g. Satoshi Nakamoto" required maxlength="100" />
+          </div>
+
+          <div class="form-group">
+            <label for="formEmail" class="form-label">Email Address</label>
+            <input type="email" id="formEmail" class="form-input" placeholder="e.g. dev@example.com" required maxlength="120" />
+          </div>
+
+          <div class="form-group">
+            <label for="formSubject" class="form-label">Subject</label>
+            <input type="text" id="formSubject" class="form-input" placeholder="e.g. Backend Opportunity / Dev Duel" maxlength="150" />
+          </div>
+
+          <div class="form-group">
+            <label for="formMessage" class="form-label">Your Message</label>
+            <textarea id="formMessage" class="form-textarea" placeholder="Detail your project requirements, scope, or collaboration ideas..." required maxlength="3000"></textarea>
+          </div>
+
+          <div class="form-footer">
+            <div class="form-btn-group">
+              <button type="submit" class="btn-submit">
+                <span>🚀</span> <span>Deliver Message</span>
+              </button>
+              <button type="button" id="btnSendViaGmail" class="btn-gmail-compose" title="Directly launch Gmail to send to mssdkkl@gmail.com">
+                <span>📬</span> <span>Send via Gmail</span>
+              </button>
+            </div>
+            <span style="font-size: 0.78rem; color: var(--text-muted); font-family: 'Fira Code', monospace;">SSL Encrypted 256-bit</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📄 RESUME / CV MODAL -->
+  <div class="resume-modal-overlay" id="resumeModal">
+    <div class="resume-modal-card">
+      <button class="modal-close-btn" id="closeResumeModal" aria-label="Close Resume Modal">✕</button>
+
+      <div style="border-bottom: 1px solid var(--glass-border-subtle); padding-bottom: 20px; margin-bottom: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <h2 style="font-family: 'Outfit', sans-serif; font-size: 1.8rem; font-weight: 800; color: #fff;">Ahmad Shuaib</h2>
+            <div style="font-size: 0.95rem; color: var(--accent-rose); font-weight: 700; margin-top: 4px;">Backend & Distributed Systems Engineer | AI Specialist</div>
+            <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 4px; font-family: 'Fira Code', monospace;">Chennai, India • <a href="mailto:mssdkkl@gmail.com" style="color: #00d2d3; text-decoration: none;">mssdkkl@gmail.com</a> • drxzx7@github • x_drxzx_x@leetcode</div>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <a href="https://github.com/drxzx7" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 8px 18px; font-size: 0.82rem;">GitHub</a>
+            <a href="https://linkedin.com/in/ahmad-shuaib-75543037a" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 8px 18px; font-size: 0.82rem;">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education & Summary -->
+      <div style="margin-bottom: 24px;">
+        <h4 style="font-family: 'Outfit', sans-serif; font-size: 1.1rem; color: #fff; margin-bottom: 8px;">🎓 Education & Background</h4>
+        <div style="background: rgba(18, 19, 29, 0.7); padding: 14px 18px; border-radius: var(--radius-md); border: 1px solid var(--glass-border-subtle);">
+          <div style="display: flex; justify-content: space-between; font-weight: 700; color: #fff; font-size: 0.92rem;">
+            <span>B.E. in Electronics and Communication Engineering</span>
+            <span style="color: var(--accent-rose); font-family: 'Fira Code', monospace;">Chennai, India</span>
+          </div>
+          <p style="font-size: 0.84rem; color: var(--text-secondary); margin-top: 6px; line-height: 1.5;">
+            Rigorous foundation in computer architecture, low-level concurrency, digital communications, signal processing, and high-performance algorithms.
+          </p>
+        </div>
+      </div>
+
+      <!-- Core Technical Competencies -->
+      <div style="margin-bottom: 24px;">
+        <h4 style="font-family: 'Outfit', sans-serif; font-size: 1.1rem; color: #fff; margin-bottom: 8px;">⚡ Technical Competencies</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px;">
+          <div style="background: rgba(18, 19, 29, 0.7); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--glass-border-subtle);">
+            <div style="font-size: 0.82rem; font-weight: 700; color: #10b981;">Languages & Core:</div>
+            <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px; font-family: 'Fira Code', monospace;">Java 17/21 (Core, Threads), C++, Python, PHP, JavaScript</div>
+          </div>
+          <div style="background: rgba(18, 19, 29, 0.7); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--glass-border-subtle);">
+            <div style="font-size: 0.82rem; font-weight: 700; color: #00d2d3;">Frameworks & Architecture:</div>
+            <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px; font-family: 'Fira Code', monospace;">Spring Boot 3, Spring Cloud Gateway, Eureka Server, Resilience4j</div>
+          </div>
+          <div style="background: rgba(18, 19, 29, 0.7); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--glass-border-subtle);">
+            <div style="font-size: 0.82rem; font-weight: 700; color: #fbbf24;">Persistence & APIs:</div>
+            <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px; font-family: 'Fira Code', monospace;">JDBC, HikariCP, MySQL, Redis (ZSET), REST, OpenAPI/Swagger</div>
+          </div>
+          <div style="background: rgba(18, 19, 29, 0.7); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--glass-border-subtle);">
+            <div style="font-size: 0.82rem; font-weight: 700; color: var(--accent-rose);">Cloud & DevOps:</div>
+            <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px; font-family: 'Fira Code', monospace;">AWS (ECS Fargate, RDS, CloudFront), Docker, Terraform, CI/CD</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Algorithmic & LeetCode Highlights -->
+      <div style="margin-bottom: 24px;">
+        <h4 style="font-family: 'Outfit', sans-serif; font-size: 1.1rem; color: #fff; margin-bottom: 8px;">⚔️ Algorithmic Track Record</h4>
+        <div style="background: rgba(18, 19, 29, 0.7); padding: 14px 18px; border-radius: var(--radius-md); border: 1px solid var(--glass-border-subtle); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+          <div><strong style="color: #fff;">445+ Problems Solved</strong> <span style="font-size: 0.8rem; color: var(--text-muted);">(125 Easy, 232 Medium, 88 Hard)</span></div>
+          <div><strong style="color: #fbbf24;">Global Rank: #273,952</strong> <span style="font-size: 0.8rem; color: var(--text-muted);">(Top ~8%)</span></div>
+          <div><strong style="color: #00d2d3;">200-Day Active Storm</strong></div>
+        </div>
+      </div>
+
+      <!-- Footer action -->
+      <div style="text-align: right; padding-top: 16px; border-top: 1px solid var(--glass-border-subtle);">
+        <button class="btn-primary" onclick="window.print()">
+          <span>🖨️</span> <span>Print / Save PDF</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🦶 FOOTER -->
+  <footer class="footer-section">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="brand-icon" style="width: 30px; height: 30px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
+        <span>Ahmad Shuaib (drxzx7)</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero" class="footer-link">Home</a>
+        <a href="#architecture" class="footer-link">System Design</a>
+        <a href="#diagrams" class="footer-link">Architecture Flowcharts</a>
+        <a href="#api-explorer" class="footer-link">API Sandbox</a>
+        <a href="#leetcode" class="footer-link">LeetCode</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="mailto:mssdkkl@gmail.com" class="footer-link" style="color: var(--accent-rose); font-weight: 700;">mssdkkl@gmail.com</a>
+        <a href="https://github.com/drxzx7" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/ahmad-shuaib-75543037a" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+      </div>
+
+      <div class="footer-copyright">
+        © 2026 Ahmad Shuaib • High-Performance Backend & Distributed Systems Engineer. Scalable to 1,000,000+ Requests & Enterprise Hardened.
+      </div>
+    </div>
+  </footer>
+
+  <!-- 🤖 VIVIAN AI FLOATING TRIGGER -->
+  <button class="vivian-floating-trigger" id="vivianTriggerBtn" aria-label="Open Vivian AI Assistant" title="Chat with Vivian AI (Claude-Powered System Architect)">
+    <span class="vivian-pulse-ring"></span>
+    <div class="vivian-avatar-circle">
+      <span class="vivian-avatar-sparkle">✨</span>
+      <span>V</span>
+    </div>
+    <div class="vivian-trigger-label">
+      <span class="vivian-label-title">Vivian AI</span>
+      <span class="vivian-label-subtitle" id="vivianTriggerSubtitle">Multi-Model AI (5 Engines)</span>
+    </div>
+    <span class="vivian-status-dot"></span>
+  </button>
+
+  <!-- 🤖 VIVIAN AI SYSTEM ARCHITECT MODAL / DRAWER -->
+  <div class="vivian-drawer-overlay" id="vivianDrawerOverlay">
+    <div class="vivian-drawer" id="vivianDrawer">
+      <!-- Drawer Header -->
+      <div class="vivian-header">
+        <div class="vivian-header-info">
+          <div class="vivian-avatar-badge">
+            <span id="vivianActiveHeaderIcon">⚡</span>
+          </div>
+          <div>
+            <div class="vivian-title-row">
+              <h3 class="vivian-name">Vivian AI</h3>
+              <span class="vivian-badge-engine" id="vivianActiveModelBadge">⚡ Gemini 3.8 Flash</span>
+            </div>
+            <p class="vivian-role">Ahmad Shuaib's Senior System Architect & Technical Mentor • Online</p>
+          </div>
+        </div>
+        <div class="vivian-header-actions">
+          <button class="vivian-action-btn" id="vivianClearChatBtn" title="Reset Chat Thread" aria-label="Reset Chat">🔄</button>
+          <button class="vivian-action-btn" id="vivianCloseDrawerBtn" title="Close Vivian AI" aria-label="Close Assistant">✕</button>
+        </div>
+      </div>
+
+      <!-- 🧠 5 SWITCHABLE AI MODELS BAR -->
+      <div class="vivian-model-bar">
+        <div class="vmb-label-group">
+          <span class="vmb-label">AI Engine:</span>
+          <span class="vmb-hint">Switch model anytime</span>
+        </div>
+        <div class="vivian-model-selector-wrapper">
+          <button type="button" class="vivian-model-select-btn" id="vivianModelSelectBtn" aria-haspopup="listbox" aria-expanded="false" title="Switch AI Model">
+            <div class="vms-btn-inner">
+              <span class="vms-icon" id="vmsActiveIcon">⚡</span>
+              <span class="vms-name" id="vmsActiveName">Gemini 3.8 Flash</span>
+              <span class="vms-badge badge-fast" id="vmsActiveBadge">Sub-15ms</span>
+            </div>
+            <span class="vms-arrow" id="vmsArrowIcon">▼</span>
+          </button>
+          <div class="vivian-model-dropdown" id="vivianModelDropdown" role="listbox" aria-label="Select AI Model">
+            <div class="vms-option active" data-model="gemini-3.8-flash" role="option" aria-selected="true">
+              <div class="vms-opt-header">
+                <span class="vms-opt-icon">⚡</span>
+                <span class="vms-opt-title">Gemini 3.8 Flash</span>
+                <span class="vms-badge badge-fast">Sub-15ms</span>
+              </div>
+              <div class="vms-opt-desc">Ultra-fast edge inference, rapid concept overviews, and low-latency interaction.</div>
+            </div>
+
+            <div class="vms-option" data-model="claude-sonnet-4.5" role="option" aria-selected="false">
+              <div class="vms-opt-header">
+                <span class="vms-opt-icon">🎭</span>
+                <span class="vms-opt-title">Claude Sonnet 4.5</span>
+                <span class="vms-badge badge-arch">Architect</span>
+              </div>
+              <div class="vms-opt-desc">Enterprise system design, Spring Boot, microservices architecture, and clean code.</div>
+            </div>
+
+            <div class="vms-option" data-model="opus-5.5" role="option" aria-selected="false">
+              <div class="vms-opt-header">
+                <span class="vms-opt-icon">🏛️</span>
+                <span class="vms-opt-title">Opus 5.5</span>
+                <span class="vms-badge badge-deep">Deep Cognitive</span>
+              </div>
+              <div class="vms-opt-desc">Exhaustive theoretical proofs, complex DSA algorithms (LeetCode 445+), and mathematical rigor.</div>
+            </div>
+
+            <div class="vms-option" data-model="gpt-6-astra" role="option" aria-selected="false">
+              <div class="vms-opt-header">
+                <span class="vms-opt-icon">🚀</span>
+                <span class="vms-opt-title">GPT-6 Astra</span>
+                <span class="vms-badge badge-astra">Next-Gen Multi-Agent</span>
+              </div>
+              <div class="vms-opt-desc">Autonomous multi-agent synthesis, full-stack pipelines, and future-forward AI integrations.</div>
+            </div>
+
+            <div class="vms-option" data-model="vivian-core-4.0" role="option" aria-selected="false">
+              <div class="vms-opt-header">
+                <span class="vms-opt-icon">✨</span>
+                <span class="vms-opt-title">Vivian Core 4.0</span>
+                <span class="vms-badge badge-core">Ahmad Neural</span>
+              </div>
+              <div class="vms-opt-desc">Ahmad Shuaib's personalized portfolio neural core, empathic mentorship & career roadmap.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Body / Messages Stream -->
+      <div class="vivian-messages-container" id="vivianMessagesContainer">
+        <!-- Initial Greeting from Vivian -->
+        <div class="vivian-msg vivian-msg-ai">
+          <div class="vivian-msg-avatar">✨</div>
+          <div class="vivian-msg-content">
+            <div class="vivian-msg-bubble">
+              <p><strong>Hello! I'm Vivian AI</strong>, Ahmad Shuaib's specialized AI System Architect & Executive Intelligence Assistant, equipped with <strong>5 Switchable Neural Models</strong> (Gemini 3.8 Flash, Claude Sonnet 4.5, Opus 5.5, GPT-6 Astra, and Vivian Core 4.0).</p>
+              <p style="margin-top: 8px;">I can guide you through <strong>Java Full Stack Development</strong>, <strong>Distributed Microservices</strong>, <strong>1M+ System Design</strong>, and <strong>DSA Algorithms</strong>. If any concept is ever unclear, just ask — I will provide clear <strong>Definitions</strong>, <strong>Comparison Matrices</strong>, <strong>Production Code</strong>, and <strong>Actionable Summaries</strong>!</p>
+              
+              <div class="vivian-connect-prompt">
+                ⚡ <strong>Mandatory Connection Channels</strong> — Before entering a prompt, explore or connect directly with Ahmad:
+              </div>
+
+              <!-- THE 4 MANDATORY CONNECTION OPTIONS -->
+              <div class="vivian-connect-grid">
+                <!-- 1. LinkedIn -->
+                <a href="https://www.linkedin.com/in/ahmad-shuaib-75543037a" target="_blank" rel="noopener noreferrer" class="vivian-connect-card card-linkedin" data-channel="LinkedIn">
+                  <div class="vc-icon">💼</div>
+                  <div class="vc-content">
+                    <div class="vc-title">Connect with LinkedIn</div>
+                    <div class="vc-handle">ahmad-shuaib-75543037a • Direct Message</div>
+                  </div>
+                  <div class="vc-arrow">➜</div>
+                </a>
+
+                <!-- 2. GitHub -->
+                <a href="https://github.com/drxzx7" target="_blank" rel="noopener noreferrer" class="vivian-connect-card card-github" data-channel="GitHub">
+                  <div class="vc-icon">🐙</div>
+                  <div class="vc-content">
+                    <div class="vc-title">Connect with GitHub</div>
+                    <div class="vc-handle">@drxzx7 • 16 Repositories & Open Source</div>
+                  </div>
+                  <div class="vc-arrow">➜</div>
+                </a>
+
+                <!-- 3. LeetCode -->
+                <a href="https://leetcode.com/u/x_drxzx_x/" target="_blank" rel="noopener noreferrer" class="vivian-connect-card card-leetcode" data-channel="LeetCode">
+                  <div class="vc-icon">⚡</div>
+                  <div class="vc-content">
+                    <div class="vc-title">Connect with LeetCode</div>
+                    <div class="vc-handle">x_drxzx_x • 445+ Solved (Global Rank #273,952)</div>
+                  </div>
+                  <div class="vc-arrow">➜</div>
+                </a>
+
+                <!-- 4. Gmail -->
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mssdkkl@gmail.com&su=Inquiry+via+Vivian+AI+-+Ahmad+Shuaib" target="_blank" rel="noopener noreferrer" class="vivian-connect-card card-gmail" data-channel="Gmail">
+                  <div class="vc-icon">✉️</div>
+                  <div class="vc-content">
+                    <div class="vc-title">Connect with Gmail</div>
+                    <div class="vc-handle">mssdkkl@gmail.com (Direct Personal Inbox)</div>
+                  </div>
+                  <div class="vc-arrow">➜</div>
+                </a>
+              </div>
+
+              <div class="vivian-suggestions-header">Explore, Learn & Compare with Vivian:</div>
+              <div class="vivian-prompt-chips">
+                <button class="vivian-chip" data-prompt="Hello! I'd love to learn about Ahmad's skills and how you can guide me.">👋 Say Hello & Overview</button>
+                <button class="vivian-chip" data-prompt="I can't understand Spring Boot & Netflix Eureka. Can you explain with a definition, analogy, comparison table & summary?">🎓 Teach Spring Boot & Eureka</button>
+                <button class="vivian-chip" data-prompt="Compare HikariCP vs Tomcat Connection Pool with definition, comparison matrix & production code.">💡 HikariCP vs Tomcat Pool</button>
+                <button class="vivian-chip" data-prompt="Explain Ahmad's 1,000,000+ daily visitors System Design blueprint with architecture and summary.">⚡ 1M+ System Design</button>
+                <button class="vivian-chip" data-prompt="Tell me all about Ahmad's AI projects: Argos, JARVIS, Eternity AI, and 50 Hackathon Demos.">🤖 Ahmad's AI Projects</button>
+                <button class="vivian-chip" data-prompt="Explain Sliding Window and Monotonic Stack patterns (LeetCode 445+) with definitions and code.">⚔️ LeetCode 445+ Patterns</button>
+              </div>
+            </div>
+            <span class="vivian-msg-time">Just now • Multi-Model Hardened</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vivian Input Footer -->
+      <div class="vivian-footer">
+        <form class="vivian-input-form" id="vivianInputForm">
+          <textarea 
+            id="vivianUserInput" 
+            class="vivian-textarea" 
+            placeholder="Ask Vivian to explain, compare, or guide you through any topic..." 
+            rows="1" 
+            maxlength="2000"
+            required
+          ></textarea>
+          <button type="submit" class="vivian-send-btn" id="vivianSendBtn" aria-label="Send Prompt">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+        <div class="vivian-footer-meta">
+          <span>🛡️ Hacker-Shielded Security Active</span>
+          <span id="vivianFooterModelMeta">⚡ Gemini 3.8 Flash • Sub-15ms Active</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/vivian-engine.js"></script>
+  <script src="js/vivian.js"></script>
+</body>
+</html>
