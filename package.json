@@ -1,0 +1,21 @@
+{
+  "name": "ahmad-shuaib-portfolio",
+  "version": "2.0.0",
+  "description": "Ahmad Shuaib — High-Performance Full Stack & AI Engineer Portfolio",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "backend-engineer",
+    "ai-developer",
+    "leetcode",
+    "java",
+    "spring-boot",
+    "system-design"
+  ],
+  "author": "Ahmad Shuaib (drxzx7)",
+  "license": "MIT"
+}
